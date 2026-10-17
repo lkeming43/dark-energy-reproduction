@@ -1,0 +1,34 @@
+{
+  "experiment_id": "pole_and_uncertainty_decomposition_20260910",
+  "source_monte_carlo_experiment": "fixed_exponential_20000mc_20260909",
+  "number_of_source_samples": 80000,
+  "omega_m_fixed": 0.3,
+  "rd_mean_hinv_mpc": 101.0,
+  "redshift_grid": {
+    "minimum": 0.0,
+    "maximum": 2.5,
+    "points": 501
+  },
+  "stability_thresholds": [
+    0.01,
+    0.05,
+    0.1
+  ],
+  "pointwise_quantiles_percent": [
+    0.1349898,
+    2.2750132,
+    15.8655254,
+    50.0,
+    84.1344746,
+    97.7249868,
+    99.8650102
+  ],
+  "filtered_result_interpretation": "Pole-free and minimum-denominator selections are conditional diagnostics, not unqualified confidence intervals.",
+  "paper_band_status": "Numerical Figure 1 boundaries not reported; digitization template left empty.",
+  "software_versions": {
+    "python": "3.13.11",
+    "numpy": "2.5.2",
+    "pandas": "2.3.3",
+    "scipy": "1.18.1"
+  }
+}

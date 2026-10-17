@@ -1,0 +1,39 @@
+# Shared independent reproduction choices. The paper does not specify its
+# seed, iteration count, population settings, or expression size limit.
+
+operators:
+  unary: [log, sqrt, exp, square, cube]
+  binary: ['+', '-', '*', '/', '^']
+  constraints: {'^': [-1, 1]}
+
+search:
+  model_selection: best
+  maxsize: 9
+  niterations: 30
+  populations: 4
+  population_size: 24
+  ncycles_per_iteration: 100
+  precision: 64
+  parallelism: serial
+  deterministic: true
+  progress: false
+  verbosity: 0
+
+loss:
+  name: full_covariance_chi2_over_n
+
+reproducibility:
+  seed: 20260917
+  error_versions: [public_release, paper_table]
+
+diagnostics:
+  z_grid_min: 0.0
+  z_grid_max: 2.33
+  z_grid_size: 300
+  physical_tolerance: 1.0e-8
+
+output:
+  root: results/09_fig23_pysr_reproduction
+  save_candidates: true
+  save_metadata: true
+  save_plot: true

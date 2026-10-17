@@ -1,0 +1,56 @@
+{
+  "paper_url": "https://arxiv.org/html/2502.10506v2",
+  "paper_version": "arXiv:2502.10506v2",
+  "paper_loss_definition": "r.T @ inv(C) @ r / n",
+  "n": 6,
+  "data_file": "results/01_desi_data_check/desi_dr2_dh_over_rd.npz",
+  "public_z": [
+    0.51,
+    0.706,
+    0.934,
+    1.321,
+    1.484,
+    2.33
+  ],
+  "public_y": [
+    21.86294686,
+    19.45534918,
+    17.64149464,
+    14.17602155,
+    12.81699964,
+    8.631545674846294
+  ],
+  "public_sigma": [
+    0.42886832478046216,
+    0.33387003159912393,
+    0.20104324858099562,
+    0.22455135092000672,
+    0.5180117691713191,
+    0.10106245296844917
+  ],
+  "table_i_y": [
+    21.863,
+    19.455,
+    17.641,
+    14.176,
+    12.817,
+    8.632
+  ],
+  "table_i_sigma": [
+    0.425,
+    0.33,
+    0.193,
+    0.221,
+    0.516,
+    0.101
+  ],
+  "eq10": {
+    "equation": "28.4*exp(-0.519*z)",
+    "public_chi2": 4.222491459411136,
+    "public_loss": 0.7037485765685226,
+    "table_i_rounded_chi2": 4.311354585560433,
+    "table_i_rounded_loss": 0.7185590975934054,
+    "implied_table_iii_selected_loss": 0.3
+  },
+  "c15_warning": "The printed complexity-15 equation is syntactically incomplete. Its computed value uses a minimal repair and is not an exact audit."
+}

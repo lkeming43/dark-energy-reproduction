@@ -1,0 +1,5 @@
+covariance,model_class,count,fraction
+paper_table,paper_like_exponential,1,0.5
+paper_table,rational_or_root,1,0.5
+public_full,paper_like_exponential,1,0.5
+public_full,quadratic,1,0.5

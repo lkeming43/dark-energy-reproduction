@@ -1,0 +1,21 @@
+{
+  "date": "2026-09-26",
+  "mean_file": "Data/DESI_BAO/desi_gaussian_bao_ALL_GCcomb_mean.txt",
+  "covariance_file": "Data/DESI_BAO/desi_gaussian_bao_ALL_GCcomb_cov.txt",
+  "dh_full_row_indices_zero_based": [
+    2,
+    4,
+    6,
+    8,
+    10,
+    11
+  ],
+  "number_of_fitted_DH_points": 6,
+  "full_DESI_dimension": 13,
+  "standard_definition": "r_DH^T C_DH,DH^{-1} r_DH / 6",
+  "precision_block_definition": "r_DH^T (C_full^{-1})_DH,DH r_DH / 6",
+  "zero_padded_n13_definition": "r_padded^T C_full^{-1} r_padded / 13; unused residuals set to zero",
+  "full13_n6_closer_count_exact_table_rows": 0,
+  "exact_parseable_table_rows": 12,
+  "important_interpretation": "Extracting a block after inversion is a conditional-style diagnostic, not the standard marginal likelihood for a D_H-only data subset."
+}

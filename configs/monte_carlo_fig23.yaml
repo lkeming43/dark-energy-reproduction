@@ -1,0 +1,19 @@
+# Shared uncertainty configuration for Figure 2 and Figure 3.
+# TODO: Fill every value before the first run.
+
+sampling:
+  draws: null
+  seed: null
+  distribution: null
+
+redshift_grid:
+  distance: {}
+  equation_of_state: {}
+
+confidence_levels: []
+
+diagnostics:
+  check_finite: null
+  check_denominator_crossing: null
+  check_physical_domain: null
+

@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "scenario": "fig3_desy5",
+  "created_utc": "2026-09-15T16:24:43.629410+00:00",
+  "raw_sn_count": 1829,
+  "selected_sn_count": 1754,
+  "desi_count": 6,
+  "raw_covariance_max_asymmetry": 0.0,
+  "symmetry_handling": "average triangles within explicit source tolerance; no eigenvalue regularization",
+  "ordering": "DESI first, then selected SN in original row order; no deduplication",
+  "observable": "D_M/r_d",
+  "units": "dimensionless",
+  "covariance_convention": "Independent BAO/SN blocks; conditional on fixed calibration; first-order Jacobian",
+  "redshift_convention": "zHD for fit and 1+z denominator following paper Eq.6",
+  "anchor": "none; enforce D_M(0)=0 in model space",
+  "rd_uncertainty": "Stored separately in config for shared nuisance MC, not per-SN noise",
+  "redshift_uncertainty": "fixed zHD; no duplicate velocity variance",
+  "source_sha256": {
+    "Data/DESI_BAO/desi_gaussian_bao_ALL_GCcomb_mean.txt": "9ac154ab583ce759c0f7eef3c978c7c70a6ead2d18774caceadf1a350a640585",
+    "Data/DESI_BAO/desi_gaussian_bao_ALL_GCcomb_cov.txt": "252a143274c8a07c78694c119617d36594f6d7965d00319ca611c6ffb886e509",
+    "Data/DESY5/DES-SN5YR_HD.csv": "95ab1e9f5460a056de37d2b4e28df73ce0c7fd471baba9fb37f1667f41b7901c",
+    "Data/DESY5/STAT+SYS.txt.gz": "20bc94a881893235a94fc5a1b1c995f4b35bfae333996c2a0ce2696cb05381f2"
+  },
+  "config": {
+    "scenario": {
+      "id": "fig3_desy5",
+      "figure": 3
+    },
+    "desi": {
+      "mean_file": "Data/DESI_BAO/desi_gaussian_bao_ALL_GCcomb_mean.txt",
+      "covariance_file": "Data/DESI_BAO/desi_gaussian_bao_ALL_GCcomb_cov.txt",
+      "observable": "DM_over_rs"
+    },
+    "supernova": {
+      "name": "DESY5",
+      "data_file": "Data/DESY5/DES-SN5YR_HD.csv",
+      "covariance_file": "Data/DESY5/STAT+SYS.txt.gz",
+      "separator": ",",
+      "observable_kind": "distance_modulus",
+      "covariance_kind": "systematics_only",
+      "symmetry_atol": 1e-12,
+      "expected_raw_rows": 1829,
+      "expected_selected_rows": 1754,
+      "columns": {
+        "redshift": "zHD",
+        "observable": "MU",
+        "error": "MUERR_FINAL",
+        "id": "CID"
+      },
+      "selection": {
+        "error_max": 1
+      },
+      "calibration": {
+        "H0": 70,
+        "rd_mpc": 144.2857142857143,
+        "rd_sigma_mpc": 3.2857142857142856
+      },
+      "documentation": "https://raw.githubusercontent.com/des-science/DES-SN5YR/e3493cb/4_DISTANCES_COVMAT/README.md"
+    },
+    "cosmology": {
+      "Omega_m": 0.3,
+      "rd_hinv_mpc": 101,
+      "rd_sigma_hinv_mpc": 2.3
+    },
+    "references": {
+      "paper_expression": "30.1*z*exp(-0.262*z)",
+      "cpl": {
+        "status": "deferred_to_reconstruction"
+      }
+    },
+    "output": {
+      "directory": "results/08_fig23_data_preparation"
+    }
+  },
+  "validation": {
+    "n": 1760,
+    "z_min": 0.02509,
+    "z_max": 2.33,
+    "positive_definite": true,
+    "finite": true,
+    "symmetric": true
+  }
+}

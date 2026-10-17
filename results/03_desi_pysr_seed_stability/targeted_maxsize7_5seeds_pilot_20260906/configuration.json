@@ -1,0 +1,57 @@
+{
+  "experiment_id": "targeted_maxsize7_5seeds_pilot_20260906",
+  "run_mode": "pilot",
+  "seeds": [
+    42,
+    202502,
+    202503,
+    202504,
+    202505
+  ],
+  "covariances": [
+    "public_full",
+    "paper_table"
+  ],
+  "number_of_expected_runs": 10,
+  "settings": {
+    "model_selection": "best",
+    "binary_operators": [
+      "+",
+      "-",
+      "*",
+      "/",
+      "^"
+    ],
+    "unary_operators": [
+      "log",
+      "sqrt",
+      "exp",
+      "square",
+      "cube"
+    ],
+    "constraints": {
+      "^": [
+        -1,
+        1
+      ]
+    },
+    "niterations": 120,
+    "populations": 8,
+    "population_size": 30,
+    "maxsize": 7,
+    "ncycles_per_iteration": 300,
+    "precision": 64,
+    "parallelism": "serial",
+    "deterministic": true,
+    "progress": false,
+    "verbosity": 0
+  },
+  "software_versions": {
+    "python": "3.13.11",
+    "numpy": "2.5.2",
+    "pandas": "2.3.3",
+    "sympy": "1.14.0",
+    "pysr": "1.5.9",
+    "julia": "1.12.7"
+  }
+}

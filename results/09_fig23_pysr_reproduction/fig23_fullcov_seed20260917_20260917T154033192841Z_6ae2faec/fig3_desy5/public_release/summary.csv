@@ -1,0 +1,2 @@
+scenario,desi_error_version,seed,n,selected_index,complexity,pysr_loss,python_chi2,python_loss,equation,sympy_expression,elapsed_seconds,finite_on_grid,positive_for_z_gt_zero,dm_at_zero,satisfies_dm_zero_constraint
+fig3_desy5,public_release,20260917,1760,5,7,1.1835877067818157,2083.1143639359952,1.1835877067818155,((z + -0.007819989359353992) / 0.02477353781129412) ^ 0.8487126698019752,((z - 0.007819989359353992)/0.02477353781129412)**0.8487126698019752,25.964380167017225,False,False,,False

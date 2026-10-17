@@ -1,0 +1,17 @@
+{
+  "date": "2026-09-26",
+  "paper_versions": {
+    "v1": "arXiv:2502.10506v1 (DESI DR1; submitted 2025-02-14)",
+    "v2": "arXiv:2502.10506v2 (DESI DR2; submitted 2025-06-13)"
+  },
+  "diagnostic_question": "Do the v2 Table III losses look as if the v1 DESI elementwise absolute-error objective was retained?",
+  "v1_literal_point_loss": "abs(prediction-target)/sigma",
+  "primary_aggregation": "mean over the six v2 D_H/r_d observations",
+  "important_limitation": "The v1 paper used DESI DR1 and a different Figure 1 analysis. This audit changes only the objective while retaining the v2 DR2 data and v2 Table III expressions.",
+  "exact_parseable_table_rows": 12,
+  "closest_counts": {
+    "v2_covariance_mean": 7,
+    "v1_abs_inv_sigma_mean": 3,
+    "v1_abs_inv_sigma_sum": 2
+  }
+}

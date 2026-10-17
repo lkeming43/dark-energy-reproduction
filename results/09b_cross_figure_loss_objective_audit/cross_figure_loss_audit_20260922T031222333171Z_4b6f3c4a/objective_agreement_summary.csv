@@ -1,0 +1,16 @@
+figure,objective,candidates,within_5_percent,within_10_percent,within_factor_2,median_log10_abs_ratio
+fig1,full_cov_chi2_over_n,12,2,3,4,0.6232399567116959
+fig1,diagonal_cov_chi2_over_n,12,2,3,4,0.6232399567116957
+fig1,unweighted_sse,12,3,3,7,0.22489277515860906
+fig1,unweighted_mse,12,0,0,1,0.8037385237677062
+fig1,full_cov_chi2,12,0,0,0,1.4013912070953394
+fig2,full_cov_chi2_over_n,12,0,0,11,0.2597800829190464
+fig2,diagonal_cov_chi2_over_n,12,0,0,11,0.28382969243382056
+fig2,unweighted_sse,12,0,0,0,2.6804050794848067
+fig2,unweighted_mse,12,0,0,1,0.5276691470764096
+fig2,full_cov_chi2,12,0,0,0,2.994745667880996
+fig3,full_cov_chi2_over_n,13,0,0,2,0.3141916252516718
+fig3,diagonal_cov_chi2_over_n,13,0,0,0,0.36603874029068106
+fig3,unweighted_sse,13,0,0,0,3.0405661186301036
+fig3,unweighted_mse,13,0,0,6,0.4622316211433256
+fig3,full_cov_chi2,13,0,0,0,2.9337194281297445

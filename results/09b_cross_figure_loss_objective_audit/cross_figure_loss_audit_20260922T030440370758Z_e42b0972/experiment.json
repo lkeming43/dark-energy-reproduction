@@ -1,0 +1,27 @@
+{
+  "experiment_id": "cross_figure_loss_audit_20260922T030440370758Z_e42b0972",
+  "created_utc": "2026-09-22T03:04:40.969817+00:00",
+  "paper": "arXiv-2502.10506v2.pdf",
+  "paper_sha256": "7945fce8dc76adad3df14075fe2dfaed9e536511d0c71d3874ca0f86926b6fbe",
+  "inputs": {
+    "fig1": {
+      "path": "results/01_desi_data_check/desi_dr2_dh_over_rd.npz",
+      "sha256": "44ef7544bca406b6ac5145d0c3a82b1cea1ca137fba29a4a6fbc412643f47a18",
+      "n": 6
+    },
+    "fig2": {
+      "path": "results/08_fig23_data_preparation/fig2_pantheon.npz",
+      "sha256": "a07cc5c83814b02ecfc3bea5be22d8eb04a2c1a2780ecca17da610683009f86c",
+      "n": 1596
+    },
+    "fig3": {
+      "path": "results/08_fig23_data_preparation/fig3_desy5.npz",
+      "sha256": "c1eb15f3b35ed0c848d1928d30ce3842017b94ed828c1362fc6746e5ed84477d",
+      "n": 1760
+    }
+  },
+  "candidate_count": 38,
+  "status": "complete",
+  "rounding_search": "center + every corner + 32 deterministic interior samples + two 9-point coordinate sweeps for min and max; all values constrained to printed rounding intervals",
+  "plot_written": false
+}

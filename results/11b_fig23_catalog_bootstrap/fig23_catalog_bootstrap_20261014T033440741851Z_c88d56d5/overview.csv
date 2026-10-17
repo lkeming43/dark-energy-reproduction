@@ -1,0 +1,7 @@
+scenario,branch,family,center,deterministic_loss,n_draws,n_valid,n_pole_crossing,n_pole_free,n_nonincreasing,pointwise_intervals
+fig2_pantheon,independent,quadratic,best_fit_expression,0.9200801121885815,20000,20000,514,19486,680,True
+fig2_pantheon,independent,quadratic,observed_data,0.9200801121885815,20000,20000,466,19534,653,True
+fig2_pantheon,refitted_exponential,exponential,best_fit_expression,0.8836502786355944,20000,20000,1467,18533,0,True
+fig2_pantheon,refitted_exponential,exponential,observed_data,0.8836502786355944,20000,20000,1421,18579,0,True
+fig3_desy5,independent,exponential,best_fit_expression,0.9371763669349589,20000,20000,360,19640,0,True
+fig3_desy5,independent,exponential,observed_data,0.9371763669349589,20000,20000,380,19620,0,True

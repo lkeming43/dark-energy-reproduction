@@ -1,0 +1,61 @@
+{
+  "experiment_id": "public_full_exponential_20000mc_20260911",
+  "source_stability_experiment": "targeted_maxsize7_100seeds_final_20260906",
+  "covariance": "public_full",
+  "model_selection_rule": "modal model class across the targeted maxsize=7 100-seed public-covariance experiment",
+  "model_selection_result": {
+    "class": "paper_like_exponential",
+    "hits": 66,
+    "runs": 100
+  },
+  "model_family": "A * exp(B z)",
+  "coefficient_estimation": "generalized least squares after fixing the model family",
+  "best_fit_parameters": {
+    "A": 28.120222543487632,
+    "B": -0.5082944262454736,
+    "chi2": 2.444247335052573
+  },
+  "paper_reference": {
+    "A": 28.4,
+    "B": -0.519
+  },
+  "n_realizations_per_center": 20000,
+  "random_seed": 20260911,
+  "center_modes": [
+    "best_fit_expression",
+    "observed_data"
+  ],
+  "primary_center": "best_fit_expression",
+  "slope_search_bounds": [
+    -2.0,
+    0.0
+  ],
+  "selections": {
+    "all": "unfiltered",
+    "stable_eps_0.01": "no pole and minimum absolute g(z) > 0.01"
+  },
+  "cosmology": {
+    "omega_m_fixed": 0.3,
+    "rd_distribution": "independent Gaussian",
+    "rd_mean_hinv_mpc": 101.0,
+    "rd_sigma_hinv_mpc": 2.3,
+    "c_km_s": 299792.458
+  },
+  "pointwise_quantiles_percent": [
+    0.1349898,
+    2.2750132,
+    15.8655254,
+    50.0,
+    84.1344746,
+    97.7249868,
+    99.8650102
+  ],
+  "runtime_seconds": 4.281837749993429,
+  "interpretation": "Monte Carlo uncertainty conditional on the exponential model family. PySR structural uncertainty is not included; epsilon-filtered results are conditional diagnostics.",
+  "software_versions": {
+    "python": "3.13.11",
+    "numpy": "2.5.2",
+    "pandas": "2.3.3",
+    "scipy": "1.18.1"
+  }
+}

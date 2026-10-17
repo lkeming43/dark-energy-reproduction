@@ -1,0 +1,2 @@
+covariance,seed,run_id,maxsize,complexity,pysr_loss,python_chi2,python_loss,equation,sympy_expression,result_source
+paper_table,202531,paper_table_seed_202531_maxsize_7,7,5,0.4215582039556635,2.529349223733981,0.4215582039556635,28.12975481998393 / (1.6627291188515376 ^ z),28.12975481998393/(1.6627291188515376**z),new_run

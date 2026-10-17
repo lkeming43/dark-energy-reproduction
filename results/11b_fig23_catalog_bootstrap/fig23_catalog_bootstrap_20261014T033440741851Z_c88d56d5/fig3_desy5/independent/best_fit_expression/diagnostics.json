@@ -1,0 +1,8 @@
+{
+  "n_draws": 20000,
+  "n_valid": 20000,
+  "n_pole_crossing": 360,
+  "n_pole_free": 19640,
+  "n_nonincreasing": 0,
+  "pointwise_intervals": true
+}

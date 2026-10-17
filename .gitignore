@@ -1,0 +1,40 @@
+.DS_Store
+.venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+
+# Downloaded survey data stay in Data/ on each machine.
+/Data/*
+!/Data/README.md
+
+# Local scratch space and generated exports.
+/tmp/
+/output/
+/arXiv-2502.10506v2.pdf
+/notes/*.pdf
+/report/*.zip
+
+# Large, regenerable numerical arrays and PySR/Julia run state.
+/results/**/*.npz
+/results/**/*.bin
+/results/**/pysr_raw/
+/results/10_fig23_seed_stability/*/runs/
+*.pkl
+*.pickle
+*.jls
+*.bak
+
+# LaTeX build files.
+report/*.aux
+report/*.bbl
+report/*.bcf
+report/*.blg
+report/*.fdb_latexmk
+report/*.fls
+report/*.log
+report/*.out
+report/*.run.xml
+report/*.synctex.gz
+report/*.toc

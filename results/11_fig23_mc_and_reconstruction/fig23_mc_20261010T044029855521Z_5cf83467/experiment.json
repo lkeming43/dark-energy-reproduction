@@ -1,0 +1,203 @@
+{
+  "created_utc": "2026-10-10T04:40:29.855743+00:00",
+  "upstream": "/Users/kemingliu/Desktop/Dark Energy/results/10_fig23_seed_stability/fig23_seeds_100_20261004T071816359765Z_101dd054",
+  "upstream_experiment_sha256": "d8ec93ce75e9d9023c8eb5d2fadd2eba6c5ae3bcb5988e61495904e5e5fc1b57",
+  "selected_runs_sha256": "bfa3442a10884dfd4395de47c23b162115e2d9d7464b95ce6f45f373b8831b84",
+  "n_mc": 10000,
+  "mc_seed": 20261011,
+  "grid": {
+    "start": 0.0,
+    "end": 2.33,
+    "points": 301
+  },
+  "selection_rule": "public_release; finite D,D',D'',w; D(0)=0; D>0 for z>0; D'>0; positive pole factor; raw loss <=1.5x minimum eligible; lowest complexity then loss then seed",
+  "method": "first-order GLS coefficient-covariance Monte Carlo; one shared rd draw per realization; SN calibration response linearized; no PySR refit per draw",
+  "branches": {
+    "independent": "Notebook 10 selected structure, GLS-refitted coefficients",
+    "refitted_exponential": "separate a*z*exp(b*z) comparison",
+    "printed_paper": "fixed printed expression, no fitted uncertainty band"
+  },
+  "limitations": [
+    "Conditional coefficient bands exclude symbolic model-selection uncertainty.",
+    "Seed-spread bands are not observational confidence intervals.",
+    "3-sigma bands are pointwise, not a global hypothesis test.",
+    "The coefficient covariance and rd response use a first-order approximation."
+  ],
+  "scenarios": {
+    "fig2_pantheon": {
+      "scenario": "fig2_pantheon",
+      "data_file": "/Users/kemingliu/Desktop/Dark Energy/results/08_fig23_data_preparation/fig2_pantheon.npz",
+      "data_sha256": "a07cc5c83814b02ecfc3bea5be22d8eb04a2c1a2780ecca17da610683009f86c",
+      "n_observations": 1596,
+      "selection": {
+        "minimum_eligible_loss": 0.8836502786355828,
+        "loss_gate_factor": 1.5,
+        "loss_gate_threshold": 1.325475417953374,
+        "eligible_count": 29,
+        "finalist_count": 26,
+        "selected_seed": 20261064
+      },
+      "raw_selected_expression": "z*(28.99729801609955 - 5.71445618323668*z)",
+      "raw_selected_loss": 0.9200801121885538,
+      "raw_selected_complexity": 7,
+      "eligible_seed_spread_count": 29,
+      "printed_paper_expression": "33.3*z*exp(-0.274*z)",
+      "branches": {
+        "independent": {
+          "source_expression": "z*(28.99729801609955 - 5.71445618323668*z)",
+          "refitted_template": "z*(p0*z + p1)",
+          "refitted_parameters": [
+            -5.7144561841247485,
+            28.997298016639846
+          ],
+          "coefficient_covariance": [
+            [
+              0.007860729872927727,
+              -0.0033321291120538966
+            ],
+            [
+              -0.0033321291120538966,
+              0.0032984120560077637
+            ]
+          ],
+          "rd_coefficient_response": [
+            0.17534057625593147,
+            -0.2975241137362785
+          ],
+          "chi2": 1468.4478590529336,
+          "loss": 0.9200801121885549,
+          "diagnostics": {
+            "n_draws": 10000,
+            "n_finite": 10000,
+            "n_pole_crossing": 300,
+            "n_pole_free": 9700,
+            "pole_free_fraction_of_finite": 0.97,
+            "minimum_absolute_pole_factor_q01": 0.00016570857911117786,
+            "three_sigma_is_pointwise": true
+          }
+        },
+        "refitted_exponential": {
+          "source_expression": "30.0*z*exp(-0.25*z)",
+          "refitted_template": "p1*z*exp(p0*z)",
+          "refitted_parameters": [
+            -0.2502321160183497,
+            29.321836852364985
+          ],
+          "coefficient_covariance": [
+            [
+              1.9676349451636423e-05,
+              -0.00018834321752601358
+            ],
+            [
+              -0.00018834321752601355,
+              0.004073252401804789
+            ]
+          ],
+          "rd_coefficient_response": [
+            0.006848524128893047,
+            -0.3193768959799729
+          ],
+          "chi2": 1410.305844702391,
+          "loss": 0.8836502786355833,
+          "diagnostics": {
+            "n_draws": 10000,
+            "n_finite": 10000,
+            "n_pole_crossing": 743,
+            "n_pole_free": 9257,
+            "pole_free_fraction_of_finite": 0.9257,
+            "minimum_absolute_pole_factor_q01": 6.056886575663835e-05,
+            "three_sigma_is_pointwise": true
+          }
+        }
+      }
+    },
+    "fig3_desy5": {
+      "scenario": "fig3_desy5",
+      "data_file": "/Users/kemingliu/Desktop/Dark Energy/results/08_fig23_data_preparation/fig3_desy5.npz",
+      "data_sha256": "c1eb15f3b35ed0c848d1928d30ce3842017b94ed828c1362fc6746e5ed84477d",
+      "n_observations": 1760,
+      "selection": {
+        "minimum_eligible_loss": 0.9371763669349892,
+        "loss_gate_factor": 1.5,
+        "loss_gate_threshold": 1.4057645504024838,
+        "eligible_count": 29,
+        "finalist_count": 29,
+        "selected_seed": 20261023
+      },
+      "raw_selected_expression": "z*29.43862992267616/1.2951851937274546**z",
+      "raw_selected_loss": 0.9371763669349892,
+      "raw_selected_complexity": 7,
+      "eligible_seed_spread_count": 29,
+      "printed_paper_expression": "30.1*z*exp(-0.262*z)",
+      "branches": {
+        "independent": {
+          "source_expression": "z*29.43862992267616/1.2951851937274546**z",
+          "refitted_template": "p1*z/p0**z",
+          "refitted_parameters": [
+            1.2951851937274546,
+            29.43862992267616
+          ],
+          "coefficient_covariance": [
+            [
+              4.4034000977897395e-05,
+              0.0005253054483324259
+            ],
+            [
+              0.0005253054483324259,
+              0.008928730540895434
+            ]
+          ],
+          "rd_coefficient_response": [
+            -0.008575785630897496,
+            -0.35137042661231155
+          ],
+          "chi2": 1649.4304058055807,
+          "loss": 0.9371763669349891,
+          "diagnostics": {
+            "n_draws": 10000,
+            "n_finite": 10000,
+            "n_pole_crossing": 228,
+            "n_pole_free": 9772,
+            "pole_free_fraction_of_finite": 0.9772,
+            "minimum_absolute_pole_factor_q01": 0.00017196675520030793,
+            "three_sigma_is_pointwise": true
+          }
+        },
+        "refitted_exponential": {
+          "source_expression": "30.0*z*exp(-0.25*z)",
+          "refitted_template": "p1*z*exp(p0*z)",
+          "refitted_parameters": [
+            -0.2586536894039604,
+            29.43862988837164
+          ],
+          "coefficient_covariance": [
+            [
+              2.624970360773432e-05,
+              -0.0004055832701207152
+            ],
+            [
+              -0.0004055832701207152,
+              0.008928730509674496
+            ]
+          ],
+          "rd_coefficient_response": [
+            0.006621281403686785,
+            -0.35137042633689025
+          ],
+          "chi2": 1649.4304058055814,
+          "loss": 0.9371763669349894,
+          "diagnostics": {
+            "n_draws": 10000,
+            "n_finite": 10000,
+            "n_pole_crossing": 222,
+            "n_pole_free": 9778,
+            "pole_free_fraction_of_finite": 0.9778,
+            "minimum_absolute_pole_factor_q01": 0.00018668134332059717,
+            "three_sigma_is_pointwise": true
+          }
+        }
+      }
+    }
+  },
+  "status": "complete"
+}

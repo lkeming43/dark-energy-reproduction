@@ -1,0 +1,62 @@
+# Published expressions are rounded transcriptions, not the authors' raw PySR constants.
+# The reported losses come from Tables IV and V of arXiv:2502.10506v2.
+paper_url: https://arxiv.org/pdf/2502.10506
+prepared_data_root: results/08_fig23_data_preparation
+output_root: results/09a_fig23_loss_audit
+denominator_scan:
+  base: 0.76
+  minimum: 0.028
+  maximum: 0.038
+  points: 201
+  illustrative_value: 0.032
+formulas:
+  fig2_pantheon:
+    - id: eq12_printed
+      expression: 33.3*z*exp(-0.274*z)
+      paper_reported_loss: 1.70
+      paper_location: Eq. 12; Table IV selected row
+    - id: table_iv_selected_literal
+      expression: z*0.76**z/0.03
+      paper_reported_loss: 1.70
+      paper_location: Table IV, complexity 7
+    - id: table_iv_complexity_3
+      expression: 27.1*z
+      paper_reported_loss: 4.65
+      paper_location: Table IV, complexity 3
+    - id: table_iv_complexity_5
+      expression: (z/0.034)**0.915
+      paper_reported_loss: 2.69
+      paper_location: Table IV, complexity 5
+    - id: table_iv_complexity_6
+      expression: z*30.20*(0.18*z-1)**2
+      paper_reported_loss: 2.39
+      paper_location: Table IV, complexity 6
+    - id: table_iv_complexity_9
+      expression: 0.77**z*(z*29.96)**0.99
+      paper_reported_loss: 1.68
+      paper_location: Table IV, complexity 9
+    - id: table_iv_complexity_10
+      expression: z**3+z*(29.8-8.24*z)
+      paper_reported_loss: 1.68
+      paper_location: Table IV, complexity 10
+  fig3_desy5:
+    - id: eq13_printed
+      expression: 30.1*z*exp(-0.262*z)
+      paper_reported_loss: 2.23
+      paper_location: Eq. 13; Table V selected row
+    - id: table_v_selected_literal
+      expression: 30.1*z/(1.31**z)
+      paper_reported_loss: 2.23
+      paper_location: Table V, complexity 7
+    - id: table_v_complexity_3
+      expression: 21.5*z
+      paper_reported_loss: 22.5
+      paper_location: Table V, complexity 3
+    - id: table_v_complexity_5
+      expression: (54.8*z)**0.77
+      paper_reported_loss: 4.82
+      paper_location: Table V, complexity 5
+    - id: table_v_complexity_6
+      expression: 22.1*z**0.774
+      paper_reported_loss: 4.82
+      paper_location: Table V, complexity 6

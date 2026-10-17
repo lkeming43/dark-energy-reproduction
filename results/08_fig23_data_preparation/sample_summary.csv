@@ -1,0 +1,3 @@
+scenario,raw_SN,selected_SN,BAO,combined,SN_z_min,SN_z_max,covariance_shape,positive_definite
+fig2_pantheon,1701,1590,6,1596,0.01016,2.26137,"(1596, 1596)",True
+fig3_desy5,1829,1754,6,1760,0.02509,1.12132,"(1760, 1760)",True

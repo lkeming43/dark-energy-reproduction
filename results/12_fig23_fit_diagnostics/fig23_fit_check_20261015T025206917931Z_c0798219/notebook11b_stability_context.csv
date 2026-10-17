@@ -1,0 +1,4 @@
+scenario,branch,n_draws,n_pole_free,n_nonincreasing
+fig2_pantheon,independent,20000,19486,680
+fig2_pantheon,refitted_exponential,20000,18533,0
+fig3_desy5,independent,20000,19640,0

@@ -1,0 +1,3 @@
+scenario,n_total,n_sn,sn_z_min,sn_z_max,sn_observable_kind,calibration
+fig2_pantheon,1596,1590,0.01016,2.26137,corrected_magnitude,"{""M"": -19.253, ""rd_mpc"": 138.28, ""rd_sigma_mpc"": 3.1, ""H0_equivalent"": 73.04020827306914}"
+fig3_desy5,1760,1754,0.02509,1.12132,distance_modulus,"{""H0"": 70, ""rd_mpc"": 144.2857142857143, ""rd_sigma_mpc"": 3.2857142857142856}"

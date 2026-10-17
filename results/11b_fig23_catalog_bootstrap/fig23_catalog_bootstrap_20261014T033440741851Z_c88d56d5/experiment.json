@@ -1,0 +1,160 @@
+{
+  "core": {
+    "schema_version": 1,
+    "prior_path": "/Users/kemingliu/Desktop/Dark Energy/results/11_fig23_mc_and_reconstruction/fig23_mc_20261010T044029855521Z_5cf83467",
+    "prior_sha256": "0914555547c83f5392c0ddfca18414271cf9096e6646f91e8e3b884bc2fbf57b",
+    "n_draws_per_center": 20000,
+    "batch_size": 500,
+    "base_seed": 20261014,
+    "centers": [
+      "best_fit_expression",
+      "observed_data"
+    ],
+    "scenario_branches": {
+      "fig2_pantheon": [
+        "independent",
+        "refitted_exponential"
+      ],
+      "fig3_desy5": [
+        "independent"
+      ]
+    },
+    "rd_policy": "per-draw shared rd; exact 1/rd SN mean and covariance rescaling in distance-space GLS",
+    "fit_policy": "full-covariance Gaussian mock catalogue; fixed family refitted per draw",
+    "slope_bounds": [
+      -2.0,
+      0.0
+    ],
+    "exp_taylor_order": 26,
+    "selection_policy": "same fixed structures as completed Notebook 11; no reselection per mock"
+  },
+  "core_sha256": "20858a58516454ad819fdda312e075c127b26e598af85fef91463d5cfac9e8a5",
+  "created_utc": "2026-10-14T03:34:40.742301+00:00",
+  "status": "complete",
+  "scenarios": {
+    "fig2_pantheon": {
+      "independent": {
+        "scenario": "fig2_pantheon",
+        "branch": "independent",
+        "family": "quadratic",
+        "n_observations": 1596,
+        "data_sha256": "a07cc5c83814b02ecfc3bea5be22d8eb04a2c1a2780ecca17da610683009f86c",
+        "coefficient_order": [
+          "a",
+          "b"
+        ],
+        "deterministic_fit": {
+          "a": 28.997298016237664,
+          "b": -5.714456183593881,
+          "chi2": 1468.4478590529761,
+          "loss": 0.9200801121885815
+        },
+        "source_expression": "z*(28.99729801609955 - 5.71445618323668*z)",
+        "rd_mean": 101.0,
+        "rd_sigma": 2.3,
+        "omega_m": 0.3,
+        "n_draws_per_center": 20000,
+        "centers": {
+          "best_fit_expression": {
+            "n_draws": 20000,
+            "n_valid": 20000,
+            "n_pole_crossing": 514,
+            "n_pole_free": 19486,
+            "n_nonincreasing": 680,
+            "pointwise_intervals": true
+          },
+          "observed_data": {
+            "n_draws": 20000,
+            "n_valid": 20000,
+            "n_pole_crossing": 466,
+            "n_pole_free": 19534,
+            "n_nonincreasing": 653,
+            "pointwise_intervals": true
+          }
+        }
+      },
+      "refitted_exponential": {
+        "scenario": "fig2_pantheon",
+        "branch": "refitted_exponential",
+        "family": "exponential",
+        "n_observations": 1596,
+        "data_sha256": "a07cc5c83814b02ecfc3bea5be22d8eb04a2c1a2780ecca17da610683009f86c",
+        "coefficient_order": [
+          "a",
+          "b"
+        ],
+        "deterministic_fit": {
+          "a": 29.321837095393768,
+          "b": -0.2502321413564334,
+          "chi2": 1410.3058447024086,
+          "loss": 0.8836502786355944
+        },
+        "source_expression": "30.0*z*exp(-0.25*z)",
+        "rd_mean": 101.0,
+        "rd_sigma": 2.3,
+        "omega_m": 0.3,
+        "n_draws_per_center": 20000,
+        "centers": {
+          "best_fit_expression": {
+            "n_draws": 20000,
+            "n_valid": 20000,
+            "n_pole_crossing": 1467,
+            "n_pole_free": 18533,
+            "n_nonincreasing": 0,
+            "pointwise_intervals": true
+          },
+          "observed_data": {
+            "n_draws": 20000,
+            "n_valid": 20000,
+            "n_pole_crossing": 1421,
+            "n_pole_free": 18579,
+            "n_nonincreasing": 0,
+            "pointwise_intervals": true
+          }
+        }
+      }
+    },
+    "fig3_desy5": {
+      "independent": {
+        "scenario": "fig3_desy5",
+        "branch": "independent",
+        "family": "exponential",
+        "n_observations": 1760,
+        "data_sha256": "c1eb15f3b35ed0c848d1928d30ce3842017b94ed828c1362fc6746e5ed84477d",
+        "coefficient_order": [
+          "a",
+          "b"
+        ],
+        "deterministic_fit": {
+          "a": 29.438630203928607,
+          "b": -0.2586537099139313,
+          "chi2": 1649.4304058055277,
+          "loss": 0.9371763669349589
+        },
+        "source_expression": "z*29.43862992267616/1.2951851937274546**z",
+        "rd_mean": 101.0,
+        "rd_sigma": 2.3,
+        "omega_m": 0.3,
+        "n_draws_per_center": 20000,
+        "centers": {
+          "best_fit_expression": {
+            "n_draws": 20000,
+            "n_valid": 20000,
+            "n_pole_crossing": 360,
+            "n_pole_free": 19640,
+            "n_nonincreasing": 0,
+            "pointwise_intervals": true
+          },
+          "observed_data": {
+            "n_draws": 20000,
+            "n_valid": 20000,
+            "n_pole_crossing": 380,
+            "n_pole_free": 19620,
+            "n_nonincreasing": 0,
+            "pointwise_intervals": true
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,52 @@
+# JSON syntax is valid YAML; paths are relative to the project root.
+{
+  "scenario": {
+    "id": "fig3_desy5",
+    "figure": 3
+  },
+  "desi": {
+    "mean_file": "Data/DESI_BAO/desi_gaussian_bao_ALL_GCcomb_mean.txt",
+    "covariance_file": "Data/DESI_BAO/desi_gaussian_bao_ALL_GCcomb_cov.txt",
+    "observable": "DM_over_rs"
+  },
+  "supernova": {
+    "name": "DESY5",
+    "data_file": "Data/DESY5/DES-SN5YR_HD.csv",
+    "covariance_file": "Data/DESY5/STAT+SYS.txt.gz",
+    "separator": ",",
+    "observable_kind": "distance_modulus",
+    "covariance_kind": "systematics_only",
+    "symmetry_atol": 1.0e-12,
+    "expected_raw_rows": 1829,
+    "expected_selected_rows": 1754,
+    "columns": {
+      "redshift": "zHD",
+      "observable": "MU",
+      "error": "MUERR_FINAL",
+      "id": "CID"
+    },
+    "selection": {
+      "error_max": 1
+    },
+    "calibration": {
+      "H0": 70,
+      "rd_mpc": 144.2857142857143,
+      "rd_sigma_mpc": 3.2857142857142856
+    },
+    "documentation": "https://raw.githubusercontent.com/des-science/DES-SN5YR/e3493cb/4_DISTANCES_COVMAT/README.md"
+  },
+  "cosmology": {
+    "Omega_m": 0.3,
+    "rd_hinv_mpc": 101,
+    "rd_sigma_hinv_mpc": 2.3
+  },
+  "references": {
+    "paper_expression": "30.1*z*exp(-0.262*z)",
+    "cpl": {
+      "status": "deferred_to_reconstruction"
+    }
+  },
+  "output": {
+    "directory": "results/08_fig23_data_preparation"
+  }
+}

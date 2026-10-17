@@ -1,0 +1,35 @@
+{
+  "status": "complete",
+  "created_utc": "2026-10-15T02:52:06.918090+00:00",
+  "method": "frozen Notebook 11 coefficients; separated full-covariance subset chi2; no new fit",
+  "prior": "/Users/kemingliu/Desktop/Dark Energy/results/11_fig23_mc_and_reconstruction/fig23_mc_20261010T044029855521Z_5cf83467",
+  "prior_experiment_sha256": "0914555547c83f5392c0ddfca18414271cf9096e6646f91e8e3b884bc2fbf57b",
+  "scenarios": {
+    "fig2_pantheon": {
+      "data_sha256": "a07cc5c83814b02ecfc3bea5be22d8eb04a2c1a2780ecca17da610683009f86c",
+      "scenario_json_sha256": "16ac7406fb8bd1ffac76d887cc178c36c6dfb3bca70d38cf601d3679c32c9d68",
+      "n_total": 1596,
+      "n_desi": 6,
+      "n_sn": 1590,
+      "branches": [
+        "independent",
+        "refitted_exponential",
+        "printed_paper"
+      ]
+    },
+    "fig3_desy5": {
+      "data_sha256": "c1eb15f3b35ed0c848d1928d30ce3842017b94ed828c1362fc6746e5ed84477d",
+      "scenario_json_sha256": "1406808731ab53331bd5fc5189f698287dd088843547762c25a1a48ea8e89007",
+      "n_total": 1760,
+      "n_desi": 6,
+      "n_sn": 1754,
+      "branches": [
+        "independent",
+        "refitted_exponential",
+        "printed_paper"
+      ]
+    }
+  },
+  "notebook11b_overview": "/Users/kemingliu/Desktop/Dark Energy/results/11b_fig23_catalog_bootstrap/fig23_catalog_bootstrap_20261014T033440741851Z_c88d56d5/overview.csv",
+  "notebook11b_overview_sha256": "074b8e873b2e5fc536d244e92f21caca12ab7dd404fce06884787727ec6ed552"
+}

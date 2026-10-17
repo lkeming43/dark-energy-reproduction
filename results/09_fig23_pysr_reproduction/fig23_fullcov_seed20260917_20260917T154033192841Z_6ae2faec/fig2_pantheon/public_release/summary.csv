@@ -1,0 +1,2 @@
+scenario,desi_error_version,seed,n,selected_index,complexity,pysr_loss,python_chi2,python_loss,equation,sympy_expression,elapsed_seconds,finite_on_grid,positive_for_z_gt_zero,dm_at_zero,satisfies_dm_zero_constraint
+fig2_pantheon,public_release,20260917,1596,4,7,0.9200801121885565,1468.4478590529338,0.920080112188555,z * (28.99729801612583 - (z * 5.7144561834408325)),z*(28.99729801612583 - 5.7144561834408325*z),25.712699832976796,True,True,0.0,True

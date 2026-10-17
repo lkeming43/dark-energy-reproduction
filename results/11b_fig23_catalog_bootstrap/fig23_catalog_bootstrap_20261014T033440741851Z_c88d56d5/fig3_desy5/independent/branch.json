@@ -1,0 +1,40 @@
+{
+  "scenario": "fig3_desy5",
+  "branch": "independent",
+  "family": "exponential",
+  "n_observations": 1760,
+  "data_sha256": "c1eb15f3b35ed0c848d1928d30ce3842017b94ed828c1362fc6746e5ed84477d",
+  "coefficient_order": [
+    "a",
+    "b"
+  ],
+  "deterministic_fit": {
+    "a": 29.438630203928607,
+    "b": -0.2586537099139313,
+    "chi2": 1649.4304058055277,
+    "loss": 0.9371763669349589
+  },
+  "source_expression": "z*29.43862992267616/1.2951851937274546**z",
+  "rd_mean": 101.0,
+  "rd_sigma": 2.3,
+  "omega_m": 0.3,
+  "n_draws_per_center": 20000,
+  "centers": {
+    "best_fit_expression": {
+      "n_draws": 20000,
+      "n_valid": 20000,
+      "n_pole_crossing": 360,
+      "n_pole_free": 19640,
+      "n_nonincreasing": 0,
+      "pointwise_intervals": true
+    },
+    "observed_data": {
+      "n_draws": 20000,
+      "n_valid": 20000,
+      "n_pole_crossing": 380,
+      "n_pole_free": 19620,
+      "n_nonincreasing": 0,
+      "pointwise_intervals": true
+    }
+  }
+}

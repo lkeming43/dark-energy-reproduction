@@ -1,0 +1,87 @@
+{
+  "scenario": "fig2_pantheon",
+  "data_file": "/Users/kemingliu/Desktop/Dark Energy/results/08_fig23_data_preparation/fig2_pantheon.npz",
+  "data_sha256": "a07cc5c83814b02ecfc3bea5be22d8eb04a2c1a2780ecca17da610683009f86c",
+  "n_observations": 1596,
+  "selection": {
+    "minimum_eligible_loss": 0.8836502786355828,
+    "loss_gate_factor": 1.5,
+    "loss_gate_threshold": 1.325475417953374,
+    "eligible_count": 29,
+    "finalist_count": 26,
+    "selected_seed": 20261064
+  },
+  "raw_selected_expression": "z*(28.99729801609955 - 5.71445618323668*z)",
+  "raw_selected_loss": 0.9200801121885538,
+  "raw_selected_complexity": 7,
+  "eligible_seed_spread_count": 29,
+  "printed_paper_expression": "33.3*z*exp(-0.274*z)",
+  "branches": {
+    "independent": {
+      "source_expression": "z*(28.99729801609955 - 5.71445618323668*z)",
+      "refitted_template": "z*(p0*z + p1)",
+      "refitted_parameters": [
+        -5.7144561841247485,
+        28.997298016639846
+      ],
+      "coefficient_covariance": [
+        [
+          0.007860729872927727,
+          -0.0033321291120538966
+        ],
+        [
+          -0.0033321291120538966,
+          0.0032984120560077637
+        ]
+      ],
+      "rd_coefficient_response": [
+        0.17534057625593147,
+        -0.2975241137362785
+      ],
+      "chi2": 1468.4478590529336,
+      "loss": 0.9200801121885549,
+      "diagnostics": {
+        "n_draws": 100,
+        "n_finite": 100,
+        "n_pole_crossing": 1,
+        "n_pole_free": 99,
+        "pole_free_fraction_of_finite": 0.99,
+        "minimum_absolute_pole_factor_q01": 0.005738668088227803,
+        "three_sigma_is_pointwise": true
+      }
+    },
+    "refitted_exponential": {
+      "source_expression": "30.0*z*exp(-0.25*z)",
+      "refitted_template": "p1*z*exp(p0*z)",
+      "refitted_parameters": [
+        -0.2502321160183497,
+        29.321836852364985
+      ],
+      "coefficient_covariance": [
+        [
+          1.9676349451636423e-05,
+          -0.00018834321752601358
+        ],
+        [
+          -0.00018834321752601355,
+          0.004073252401804789
+        ]
+      ],
+      "rd_coefficient_response": [
+        0.006848524128893047,
+        -0.3193768959799729
+      ],
+      "chi2": 1410.305844702391,
+      "loss": 0.8836502786355833,
+      "diagnostics": {
+        "n_draws": 100,
+        "n_finite": 100,
+        "n_pole_crossing": 4,
+        "n_pole_free": 96,
+        "pole_free_fraction_of_finite": 0.96,
+        "minimum_absolute_pole_factor_q01": 9.373477700491683e-06,
+        "three_sigma_is_pointwise": true
+      }
+    }
+  }
+}

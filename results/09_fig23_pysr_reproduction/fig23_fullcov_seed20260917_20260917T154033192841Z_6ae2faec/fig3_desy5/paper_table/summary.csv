@@ -1,0 +1,2 @@
+scenario,desi_error_version,seed,n,selected_index,complexity,pysr_loss,python_chi2,python_loss,equation,sympy_expression,elapsed_seconds,finite_on_grid,positive_for_z_gt_zero,dm_at_zero,satisfies_dm_zero_constraint
+fig3_desy5,paper_table,20260917,1760,5,7,0.9821693186595184,1728.6180008407523,0.9821693186595184,((z * -5.686938505863477) + 28.774998567146834) * z,z*(28.774998567146834 + z*(-5.686938505863477)),25.09278816601727,True,True,0.0,True

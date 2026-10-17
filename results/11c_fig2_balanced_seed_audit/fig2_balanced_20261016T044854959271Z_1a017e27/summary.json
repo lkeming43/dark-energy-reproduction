@@ -1,0 +1,21 @@
+{
+  "candidate_count": 100,
+  "eligible_count": 29,
+  "loss_gate_count": 26,
+  "notebook11_primary": {
+    "seed": 20261064,
+    "expression": "z*(28.99729801609955 - 5.71445618323668*z)",
+    "complexity": 7,
+    "desi_chi2_per_point": 6.987947206291101,
+    "sn_chi2_per_point": 0.8971825005126962,
+    "combined_chi2_per_point": 0.9200801121885549
+  },
+  "notebook11c_selected": {
+    "seed": 20261093,
+    "expression": "29.321836856709833*z/1.2843234947453503**z",
+    "complexity": 9,
+    "desi_chi2_per_point": 1.713708486018673,
+    "sn_chi2_per_point": 0.880517983513383,
+    "combined_chi2_per_point": 0.8836502786355833
+  }
+}

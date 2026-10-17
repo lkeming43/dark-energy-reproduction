@@ -1,0 +1,193 @@
+{
+  "core": {
+    "schema_version": 1,
+    "config": {
+      "operators": {
+        "unary": [
+          "log",
+          "sqrt",
+          "exp",
+          "square",
+          "cube"
+        ],
+        "binary": [
+          "+",
+          "-",
+          "*",
+          "/",
+          "^"
+        ],
+        "constraints": {
+          "^": [
+            -1,
+            1
+          ]
+        }
+      },
+      "search": {
+        "model_selection": "best",
+        "maxsize": 9,
+        "niterations": 30,
+        "populations": 4,
+        "population_size": 24,
+        "ncycles_per_iteration": 100,
+        "precision": 64,
+        "parallelism": "serial",
+        "deterministic": true,
+        "progress": false,
+        "verbosity": 0
+      },
+      "loss": {
+        "name": "full_covariance_chi2_over_n"
+      },
+      "reproducibility": {
+        "seed": 20260917,
+        "error_versions": [
+          "public_release",
+          "paper_table"
+        ]
+      },
+      "diagnostics": {
+        "z_grid_min": 0.0,
+        "z_grid_max": 2.33,
+        "z_grid_size": 300,
+        "physical_tolerance": 1e-08
+      },
+      "output": {
+        "root": "results/10_fig23_seed_stability",
+        "save_candidates": true,
+        "save_metadata": true,
+        "save_plot": true
+      }
+    },
+    "scenarios": [
+      "fig2_pantheon",
+      "fig3_desy5"
+    ],
+    "error_versions": [
+      "public_release",
+      "paper_table"
+    ],
+    "prepared_data": {
+      "fig2_pantheon": {
+        "path": "/Users/kemingliu/Desktop/Dark Energy/results/08_fig23_data_preparation/fig2_pantheon.npz",
+        "sha256": "a07cc5c83814b02ecfc3bea5be22d8eb04a2c1a2780ecca17da610683009f86c"
+      },
+      "fig3_desy5": {
+        "path": "/Users/kemingliu/Desktop/Dark Energy/results/08_fig23_data_preparation/fig3_desy5.npz",
+        "sha256": "c1eb15f3b35ed0c848d1928d30ce3842017b94ed828c1362fc6746e5ed84477d"
+      }
+    },
+    "paper_expressions": {
+      "fig2_pantheon": "33.3*z*exp(-0.274*z)",
+      "fig3_desy5": "30.1*z*exp(-0.262*z)"
+    }
+  },
+  "core_sha256": "233c1426200605564874380fb0552666655da228d555dbdb1c0940cc17b1511f",
+  "seeds": [
+    20261004,
+    20261005,
+    20261006,
+    20261007,
+    20261008,
+    20261009,
+    20261010,
+    20261011,
+    20261012,
+    20261013,
+    20261014,
+    20261015,
+    20261016,
+    20261017,
+    20261018,
+    20261019,
+    20261020,
+    20261021,
+    20261022,
+    20261023,
+    20261024,
+    20261025,
+    20261026,
+    20261027,
+    20261028,
+    20261029,
+    20261030,
+    20261031,
+    20261032,
+    20261033,
+    20261034,
+    20261035,
+    20261036,
+    20261037,
+    20261038,
+    20261039,
+    20261040,
+    20261041,
+    20261042,
+    20261043,
+    20261044,
+    20261045,
+    20261046,
+    20261047,
+    20261048,
+    20261049,
+    20261050,
+    20261051,
+    20261052,
+    20261053,
+    20261054,
+    20261055,
+    20261056,
+    20261057,
+    20261058,
+    20261059,
+    20261060,
+    20261061,
+    20261062,
+    20261063,
+    20261064,
+    20261065,
+    20261066,
+    20261067,
+    20261068,
+    20261069,
+    20261070,
+    20261071,
+    20261072,
+    20261073,
+    20261074,
+    20261075,
+    20261076,
+    20261077,
+    20261078,
+    20261079,
+    20261080,
+    20261081,
+    20261082,
+    20261083,
+    20261084,
+    20261085,
+    20261086,
+    20261087,
+    20261088,
+    20261089,
+    20261090,
+    20261091,
+    20261092,
+    20261093,
+    20261094,
+    20261095,
+    20261096,
+    20261097,
+    20261098,
+    20261099,
+    20261100,
+    20261101,
+    20261102,
+    20261103
+  ],
+  "created_utc": "2026-10-04T07:18:16.359885+00:00",
+  "updated_utc": "2026-10-04T09:29:35.001926+00:00",
+  "status": "complete",
+  "seed_extensions": []
+}

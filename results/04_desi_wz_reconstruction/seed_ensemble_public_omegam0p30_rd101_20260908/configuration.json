@@ -1,0 +1,34 @@
+{
+  "experiment_id": "seed_ensemble_public_omegam0p30_rd101_20260908",
+  "source_stability_experiment": "targeted_maxsize7_100seeds_final_20260906",
+  "paper_expression": {
+    "A": 28.4,
+    "B": -0.519
+  },
+  "cosmology": {
+    "omega_m": 0.3,
+    "rd_hinv_mpc": 101.0,
+    "rd_sigma_hinv_mpc": 2.3,
+    "c_km_s": 299792.458,
+    "gamma": 0.00034050429665408887
+  },
+  "redshift_grid": {
+    "minimum": 0.0,
+    "maximum": 2.5,
+    "points": 501
+  },
+  "algorithmic_quantiles_percent": [
+    2.5,
+    16.0,
+    50.0,
+    84.0,
+    97.5
+  ],
+  "uncertainty_interpretation": "Conditional seed-dependent spread among paper-like exponentials; not an observational confidence interval.",
+  "software_versions": {
+    "python": "3.13.11",
+    "numpy": "2.5.2",
+    "pandas": "2.3.3",
+    "scipy": "1.18.1"
+  }
+}

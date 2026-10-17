@@ -1,0 +1,8 @@
+{
+  "center": "observed_data",
+  "n_draws": 20000,
+  "n_finite": 20000,
+  "n_pole_crossing": 1466,
+  "n_pole_free": 18534,
+  "n_nonincreasing": 0
+}

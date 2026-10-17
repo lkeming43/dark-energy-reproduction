@@ -1,0 +1,2 @@
+covariance,seed,run_id,maxsize,complexity,pysr_loss,python_chi2,python_loss,equation,sympy_expression,result_source
+public_full,202539,public_full_seed_202539_maxsize_7,7,5,0.5394842654202244,3.2369055925213885,0.5394842654202314,sqrt(773.3924141238097 / exp(z)),27.80993373102154*sqrt(exp(-z)),new_run

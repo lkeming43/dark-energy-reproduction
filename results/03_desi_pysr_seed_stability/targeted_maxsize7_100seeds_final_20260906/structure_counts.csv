@@ -1,0 +1,11 @@
+covariance,model_class,count,fraction
+paper_table,contains_exponential,1,0.01
+paper_table,other,25,0.25
+paper_table,paper_like_exponential,54,0.54
+paper_table,polynomial,2,0.02
+paper_table,quadratic,2,0.02
+paper_table,rational_or_root,16,0.16
+public_full,other,13,0.13
+public_full,paper_like_exponential,66,0.66
+public_full,quadratic,1,0.01
+public_full,rational_or_root,20,0.2

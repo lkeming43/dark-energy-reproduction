@@ -1,0 +1,46 @@
+{
+  "experiment_id": "fixed_exponential_20000mc_20260909",
+  "source_reconstruction_experiment": "seed_ensemble_public_omegam0p30_rd101_20260908",
+  "n_realizations_per_configuration": 20000,
+  "random_seed": 20250909,
+  "center_modes": [
+    "observed_data",
+    "paper_expression"
+  ],
+  "covariance_configurations": [
+    "public_full",
+    "paper_table"
+  ],
+  "model_family": "A * exp(B z)",
+  "slope_search_bounds": [
+    -2.0,
+    0.0
+  ],
+  "paper_expression": {
+    "A": 28.4,
+    "B": -0.519
+  },
+  "cosmology": {
+    "omega_m_fixed": 0.3,
+    "rd_mean_hinv_mpc": 101.0,
+    "rd_sigma_hinv_mpc": 2.3,
+    "c_km_s": 299792.458
+  },
+  "pointwise_quantiles_percent": [
+    0.1349898,
+    2.2750132,
+    15.8655254,
+    50.0,
+    84.1344746,
+    97.7249868,
+    99.8650102
+  ],
+  "runtime_seconds": 7.227394875022583,
+  "uncertainty_interpretation": "Observational Monte Carlo uncertainty conditional on a fixed exponential model family; does not include PySR structural/model-selection uncertainty.",
+  "software_versions": {
+    "python": "3.13.11",
+    "numpy": "2.5.2",
+    "pandas": "2.3.3",
+    "scipy": "1.18.1"
+  }
+}

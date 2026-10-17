@@ -1,0 +1,40 @@
+{
+  "scenario": "fig2_pantheon",
+  "branch": "independent",
+  "family": "quadratic",
+  "n_observations": 1596,
+  "data_sha256": "a07cc5c83814b02ecfc3bea5be22d8eb04a2c1a2780ecca17da610683009f86c",
+  "coefficient_order": [
+    "a",
+    "b"
+  ],
+  "deterministic_fit": {
+    "a": 28.997298016237664,
+    "b": -5.714456183593881,
+    "chi2": 1468.4478590529761,
+    "loss": 0.9200801121885815
+  },
+  "source_expression": "z*(28.99729801609955 - 5.71445618323668*z)",
+  "rd_mean": 101.0,
+  "rd_sigma": 2.3,
+  "omega_m": 0.3,
+  "n_draws_per_center": 20000,
+  "centers": {
+    "best_fit_expression": {
+      "n_draws": 20000,
+      "n_valid": 20000,
+      "n_pole_crossing": 514,
+      "n_pole_free": 19486,
+      "n_nonincreasing": 680,
+      "pointwise_intervals": true
+    },
+    "observed_data": {
+      "n_draws": 20000,
+      "n_valid": 20000,
+      "n_pole_crossing": 466,
+      "n_pole_free": 19534,
+      "n_nonincreasing": 653,
+      "pointwise_intervals": true
+    }
+  }
+}

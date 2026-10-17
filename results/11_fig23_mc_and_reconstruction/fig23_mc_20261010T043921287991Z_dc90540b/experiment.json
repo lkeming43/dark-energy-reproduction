@@ -1,0 +1,27 @@
+{
+  "created_utc": "2026-10-10T04:39:21.288216+00:00",
+  "upstream": "/Users/kemingliu/Desktop/Dark Energy/results/10_fig23_seed_stability/fig23_seeds_100_20261004T071816359765Z_101dd054",
+  "upstream_experiment_sha256": "d8ec93ce75e9d9023c8eb5d2fadd2eba6c5ae3bcb5988e61495904e5e5fc1b57",
+  "selected_runs_sha256": "bfa3442a10884dfd4395de47c23b162115e2d9d7464b95ce6f45f373b8831b84",
+  "n_mc": 100,
+  "mc_seed": 123,
+  "grid": {
+    "start": 0.0,
+    "end": 2.33,
+    "points": 301
+  },
+  "selection_rule": "public_release; finite D,D',D'',w; D(0)=0; D>0 for z>0; D'>0; positive pole factor; raw loss <=1.5x minimum eligible; lowest complexity then loss then seed",
+  "method": "first-order GLS coefficient-covariance Monte Carlo; one shared rd draw per realization; SN calibration response linearized; no PySR refit per draw",
+  "branches": {
+    "independent": "Notebook 10 selected structure, GLS-refitted coefficients",
+    "refitted_exponential": "separate a*z*exp(b*z) comparison",
+    "printed_paper": "fixed printed expression, no fitted uncertainty band"
+  },
+  "limitations": [
+    "Conditional coefficient bands exclude symbolic model-selection uncertainty.",
+    "Seed-spread bands are not observational confidence intervals.",
+    "3-sigma bands are pointwise, not a global hypothesis test.",
+    "The coefficient covariance and rd response use a first-order approximation."
+  ],
+  "scenarios": {}
+}

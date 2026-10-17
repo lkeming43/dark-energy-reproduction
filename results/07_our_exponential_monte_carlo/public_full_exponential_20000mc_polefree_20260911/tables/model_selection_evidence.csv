@@ -1,0 +1,5 @@
+model_class,count,fraction
+paper_like_exponential,66,0.66
+rational_or_root,20,0.2
+other,13,0.13
+quadratic,1,0.01

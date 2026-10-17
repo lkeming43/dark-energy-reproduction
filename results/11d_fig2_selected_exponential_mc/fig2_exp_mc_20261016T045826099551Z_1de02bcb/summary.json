@@ -1,0 +1,41 @@
+{
+  "selected_seed": 20261093,
+  "expression": "29.321836856709833*z/1.2843234947453503**z",
+  "raw_amplitude": 29.321836856709833,
+  "raw_slope": -0.2502321164835667,
+  "raw_combined_loss": 0.8836502786355833,
+  "gls_refitted_amplitude": 29.321837095393768,
+  "gls_refitted_slope": -0.2502321413564334,
+  "gls_refitted_loss": 0.8836502786355944,
+  "rd_mean": 101.0,
+  "rd_sigma": 2.3,
+  "omega_m": 0.3,
+  "centers": [
+    {
+      "center": "raw_selected_expression",
+      "n_draws": 20000,
+      "n_finite": 20000,
+      "n_pole_crossing": 1478,
+      "n_pole_free": 18522,
+      "n_nonincreasing": 0
+    },
+    {
+      "center": "observed_data",
+      "n_draws": 20000,
+      "n_finite": 20000,
+      "n_pole_crossing": 1466,
+      "n_pole_free": 18534,
+      "n_nonincreasing": 0
+    }
+  ],
+  "pointwise_3sigma_outside_minus_one_segments": {
+    "raw_selected_expression": {
+      "all": [[1.576633333333333, 1.576633333333333]],
+      "pole_free": [[0.0, 0.0388333333333333], [1.576633333333333, 2.33]]
+    },
+    "observed_data": {
+      "all": [],
+      "pole_free": [[0.0, 0.0388333333333333], [1.5844, 2.33]]
+    }
+  }
+}

@@ -1,0 +1,5 @@
+scenario,desi_error_version,a,b,chi2,loss,success,message,paper_expression_loss
+fig2_pantheon,public_release,29.321837499546678,-0.2502321836124194,1410.305844702621,0.8836502786357274,True,`ftol` termination condition is satisfied.,4.729392706267941
+fig2_pantheon,paper_table,29.32254665076062,-0.25038479173082556,1410.4948146676543,0.8837686808694576,True,`ftol` termination condition is satisfied.,4.754840032523369
+fig3_desy5,public_release,29.438634858447692,-0.25865401119078907,1649.430405809403,0.9371763669371608,True,`ftol` termination condition is satisfied.,1.0164721230905815
+fig3_desy5,paper_table,29.438778230516583,-0.2586497993874698,1649.5688941584895,0.9372550534991417,True,`ftol` termination condition is satisfied.,1.0171508070280049

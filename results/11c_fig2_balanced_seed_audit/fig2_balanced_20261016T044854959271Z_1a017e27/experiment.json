@@ -1,0 +1,23 @@
+{
+  "created_utc": "2026-10-16T04:48:54.959459+00:00",
+  "status": "complete",
+  "scope": "Figure 2 only",
+  "study_type": "exploratory post-Notebook-12 re-selection; not preregistered",
+  "inputs": {
+    "/Users/kemingliu/Desktop/Dark Energy/results/11_fig23_mc_and_reconstruction/fig23_mc_20261010T044029855521Z_5cf83467/fig2_pantheon/candidate_diagnostics.csv": "136aa6680c967632e3aa3ad4b3402e04e884ef7314d531462ca75e5ed46feae9",
+    "/Users/kemingliu/Desktop/Dark Energy/results/08_fig23_data_preparation/fig2_pantheon.npz": "a07cc5c83814b02ecfc3bea5be22d8eb04a2c1a2780ecca17da610683009f86c",
+    "/Users/kemingliu/Desktop/Dark Energy/results/10_fig23_seed_stability/fig23_seeds_100_20261004T071816359765Z_101dd054/selected_runs.csv": "bfa3442a10884dfd4395de47c23b162115e2d9d7464b95ce6f45f373b8831b84"
+  },
+  "selection_rule": [
+    "Use only the 100 fixed public-covariance Notebook 10 seed-selected expressions.",
+    "Retain Notebook 11 physical eligibility and <=1.5x original combined-loss gate.",
+    "No coefficient refit. Use separate marginal full-covariance DESI and SN chi2/N.",
+    "Minimize max(DESI chi2/6, SN chi2/1590); break ties by combined loss, complexity, seed."
+  ],
+  "limitations": [
+    "Subset chi2/N is descriptive; six DESI points give it substantial sampling variance.",
+    "One selected structure from 100 seeds does not demonstrate search stability.",
+    "This audit does not compute new Monte Carlo confidence bands or reproduce Figure 2 completely."
+  ],
+  "selected_seed": 20261093
+}

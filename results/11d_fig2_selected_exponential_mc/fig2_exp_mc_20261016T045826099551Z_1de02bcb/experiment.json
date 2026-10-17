@@ -1,0 +1,35 @@
+{
+  "created_utc": "2026-10-16T04:58:26.099702+00:00",
+  "status": "complete",
+  "scope": "Figure 2 only",
+  "selected_pysr_seed": 20261093,
+  "raw_pysr_expression": "29.321836856709833*z/1.2843234947453503**z",
+  "equivalent_exponential_parameters": {
+    "amplitude": 29.321836856709833,
+    "slope": -0.2502321164835667
+  },
+  "coefficient_policy": "raw PySR coefficients fixed as the model-centered mock mean; each mock catalogue refitted in the same exponential family",
+  "method": "full-covariance Gaussian catalogue bootstrap, 20k draws per center by default; exact shared r_d SN rescaling and per-draw GLS refit",
+  "centers": [
+    "raw_selected_expression",
+    "observed_data"
+  ],
+  "selection_policy": "structure fixed from Notebook 11c; no per-draw PySR reselection",
+  "pointwise_intervals": true,
+  "input_sha256": {
+    "/Users/kemingliu/Desktop/Dark Energy/results/08_fig23_data_preparation/fig2_pantheon.npz": "a07cc5c83814b02ecfc3bea5be22d8eb04a2c1a2780ecca17da610683009f86c",
+    "/Users/kemingliu/Desktop/Dark Energy/results/11c_fig2_balanced_seed_audit/fig2_balanced_20261016T044854959271Z_1a017e27/experiment.json": "0d943f6dddcc1454789e6a1d361991121933b721a36701cbbab717663cf6659b",
+    "/Users/kemingliu/Desktop/Dark Energy/results/11c_fig2_balanced_seed_audit/fig2_balanced_20261016T044854959271Z_1a017e27/summary.json": "9297bdf92e05dff7e2c5a502c79746347c49f984cd45b02a8eb75df0476b7448",
+    "/Users/kemingliu/Desktop/Dark Energy/results/11c_fig2_balanced_seed_audit/fig2_balanced_20261016T044854959271Z_1a017e27/candidate_subset_scores.csv": "41af48fd204db40c1ad100e971d39b80be69a957a7d19ff5318bc5f2d3b2f622",
+    "/Users/kemingliu/Desktop/Dark Energy/results/11_fig23_mc_and_reconstruction/fig23_mc_20261010T044029855521Z_5cf83467/fig2_pantheon/candidate_diagnostics.csv": "136aa6680c967632e3aa3ad4b3402e04e884ef7314d531462ca75e5ed46feae9"
+  },
+  "n_draws_per_center": 20000,
+  "batch_size": 500,
+  "base_seed": 20261016,
+  "limitations": [
+    "The result is exploratory because 11c re-selection followed Notebook 12 diagnostics.",
+    "Only one of 100 seed-selected expressions has this exponential family.",
+    "Intervals are conditional on the fixed exponential structure and are pointwise, not simultaneous.",
+    "Pole-free bands condition on discarding pole-crossing realizations."
+  ]
+}

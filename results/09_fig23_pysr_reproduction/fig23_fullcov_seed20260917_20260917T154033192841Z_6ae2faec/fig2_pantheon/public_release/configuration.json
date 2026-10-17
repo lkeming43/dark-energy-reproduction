@@ -1,0 +1,181 @@
+{
+  "summary": {
+    "scenario": "fig2_pantheon",
+    "desi_error_version": "public_release",
+    "seed": 20260917,
+    "n": 1596,
+    "selected_index": 4,
+    "complexity": 7,
+    "pysr_loss": 0.9200801121885565,
+    "python_chi2": 1468.4478590529338,
+    "python_loss": 0.920080112188555,
+    "equation": "z * (28.99729801612583 - (z * 5.7144561834408325))",
+    "sympy_expression": "z*(28.99729801612583 - 5.7144561834408325*z)",
+    "elapsed_seconds": 25.712699832976796,
+    "finite_on_grid": true,
+    "positive_for_z_gt_zero": true,
+    "dm_at_zero": 0.0,
+    "satisfies_dm_zero_constraint": true
+  },
+  "benchmark_azexpbz": {
+    "scenario": "fig2_pantheon",
+    "desi_error_version": "public_release",
+    "a": 29.321837499546678,
+    "b": -0.2502321836124194,
+    "chi2": 1410.305844702621,
+    "loss": 0.8836502786357274,
+    "success": true,
+    "message": "`ftol` termination condition is satisfied.",
+    "paper_expression_loss": 4.729392706267941
+  },
+  "config": {
+    "operators": {
+      "unary": [
+        "log",
+        "sqrt",
+        "exp",
+        "square",
+        "cube"
+      ],
+      "binary": [
+        "+",
+        "-",
+        "*",
+        "/",
+        "^"
+      ],
+      "constraints": {
+        "^": [
+          -1,
+          1
+        ]
+      }
+    },
+    "search": {
+      "model_selection": "best",
+      "maxsize": 9,
+      "niterations": 30,
+      "populations": 4,
+      "population_size": 24,
+      "ncycles_per_iteration": 100,
+      "precision": 64,
+      "parallelism": "serial",
+      "deterministic": true,
+      "progress": false,
+      "verbosity": 0
+    },
+    "loss": {
+      "name": "full_covariance_chi2_over_n"
+    },
+    "reproducibility": {
+      "seed": 20260917,
+      "error_versions": [
+        "public_release",
+        "paper_table"
+      ]
+    },
+    "diagnostics": {
+      "z_grid_min": 0.0,
+      "z_grid_max": 2.33,
+      "z_grid_size": 300,
+      "physical_tolerance": 1e-08
+    },
+    "output": {
+      "root": "results/09_fig23_pysr_reproduction",
+      "save_candidates": true,
+      "save_metadata": true,
+      "save_plot": true
+    }
+  },
+  "dataset_metadata": {
+    "schema_version": 1,
+    "scenario": "fig2_pantheon",
+    "created_utc": "2026-09-15T16:24:43.096938+00:00",
+    "raw_sn_count": 1701,
+    "selected_sn_count": 1590,
+    "desi_count": 6,
+    "raw_covariance_max_asymmetry": 3.0000000000038676e-08,
+    "symmetry_handling": "average triangles within explicit source tolerance; no eigenvalue regularization",
+    "ordering": "DESI first, then selected SN in original row order; no deduplication",
+    "observable": "D_M/r_d",
+    "units": "dimensionless",
+    "covariance_convention": "Independent BAO/SN blocks; conditional on fixed calibration; first-order Jacobian",
+    "redshift_convention": "zHD for fit and 1+z denominator following paper Eq.6",
+    "anchor": "none; enforce D_M(0)=0 in model space",
+    "rd_uncertainty": "Stored separately in config for shared nuisance MC, not per-SN noise",
+    "redshift_uncertainty": "fixed zHD; no duplicate velocity variance",
+    "source_sha256": {
+      "Data/DESI_BAO/desi_gaussian_bao_ALL_GCcomb_mean.txt": "9ac154ab583ce759c0f7eef3c978c7c70a6ead2d18774caceadf1a350a640585",
+      "Data/DESI_BAO/desi_gaussian_bao_ALL_GCcomb_cov.txt": "252a143274c8a07c78694c119617d36594f6d7965d00319ca611c6ffb886e509",
+      "Data/Pantheon/Pantheon+SH0ES.dat": "1cb0fc379ef066afdc2ffd1857681cc478024570d8a3eba284fb645775198cf8",
+      "Data/Pantheon/Pantheon+SH0ES_STAT+SYS.cov": "abf806d966485e64afdb359c87bffc0ecc00d05eff0a31ced66f247385df0fdc"
+    },
+    "config": {
+      "scenario": {
+        "id": "fig2_pantheon",
+        "figure": 2
+      },
+      "desi": {
+        "mean_file": "Data/DESI_BAO/desi_gaussian_bao_ALL_GCcomb_mean.txt",
+        "covariance_file": "Data/DESI_BAO/desi_gaussian_bao_ALL_GCcomb_cov.txt",
+        "observable": "DM_over_rs"
+      },
+      "supernova": {
+        "name": "Pantheon+",
+        "data_file": "Data/Pantheon/Pantheon+SH0ES.dat",
+        "covariance_file": "Data/Pantheon/Pantheon+SH0ES_STAT+SYS.cov",
+        "separator": "\\s+",
+        "observable_kind": "corrected_magnitude",
+        "covariance_kind": "stat_plus_sys",
+        "symmetry_atol": 5e-08,
+        "expected_raw_rows": 1701,
+        "expected_selected_rows": 1590,
+        "columns": {
+          "redshift": "zHD",
+          "observable": "m_b_corr",
+          "error": "m_b_corr_err_DIAG",
+          "id": "CID"
+        },
+        "selection": {
+          "redshift_min": 0.01
+        },
+        "calibration": {
+          "M": -19.253,
+          "rd_mpc": 138.28,
+          "rd_sigma_mpc": 3.1,
+          "H0_equivalent": 73.04020827306914
+        },
+        "documentation": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/main/Pantheon%2B_Data/4_DISTANCES_AND_COVAR/README"
+      },
+      "cosmology": {
+        "Omega_m": 0.3,
+        "rd_hinv_mpc": 101,
+        "rd_sigma_hinv_mpc": 2.3
+      },
+      "references": {
+        "paper_expression": "33.3*z*exp(-0.274*z)",
+        "cpl": {
+          "status": "deferred_to_reconstruction"
+        }
+      },
+      "output": {
+        "directory": "results/08_fig23_data_preparation"
+      }
+    },
+    "validation": {
+      "n": 1596,
+      "z_min": 0.01016,
+      "z_max": 2.33,
+      "positive_definite": true,
+      "finite": true,
+      "symmetric": true
+    },
+    "desi_error_version": "public_release",
+    "desi_error_description": "DESI release covariance submatrix"
+  },
+  "software": {
+    "python": "3.13.11",
+    "numpy": "2.5.2",
+    "pandas": "2.3.3"
+  }
+}

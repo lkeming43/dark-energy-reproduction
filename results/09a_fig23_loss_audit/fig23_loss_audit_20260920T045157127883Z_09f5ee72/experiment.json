@@ -1,0 +1,130 @@
+{
+  "experiment_id": "fig23_loss_audit_20260920T045157127883Z_09f5ee72",
+  "created_utc": "2026-09-20T04:51:57.128243+00:00",
+  "status": "complete",
+  "paper_url": "https://arxiv.org/pdf/2502.10506",
+  "config": {
+    "paper_url": "https://arxiv.org/pdf/2502.10506",
+    "prepared_data_root": "results/08_fig23_data_preparation",
+    "output_root": "results/09a_fig23_loss_audit",
+    "denominator_scan": {
+      "base": 0.76,
+      "minimum": 0.028,
+      "maximum": 0.038,
+      "points": 201,
+      "illustrative_value": 0.032
+    },
+    "formulas": {
+      "fig2_pantheon": [
+        {
+          "id": "eq12_printed",
+          "expression": "33.3*z*exp(-0.274*z)",
+          "paper_reported_loss": 1.7,
+          "paper_location": "Eq. 12; Table IV selected row"
+        },
+        {
+          "id": "table_iv_selected_literal",
+          "expression": "z*0.76**z/0.03",
+          "paper_reported_loss": 1.7,
+          "paper_location": "Table IV, complexity 7"
+        },
+        {
+          "id": "table_iv_complexity_3",
+          "expression": "27.1*z",
+          "paper_reported_loss": 4.65,
+          "paper_location": "Table IV, complexity 3"
+        },
+        {
+          "id": "table_iv_complexity_5",
+          "expression": "(z/0.034)**0.915",
+          "paper_reported_loss": 2.69,
+          "paper_location": "Table IV, complexity 5"
+        },
+        {
+          "id": "table_iv_complexity_6",
+          "expression": "z*30.20*(0.18*z-1)**2",
+          "paper_reported_loss": 2.39,
+          "paper_location": "Table IV, complexity 6"
+        },
+        {
+          "id": "table_iv_complexity_9",
+          "expression": "0.77**z*(z*29.96)**0.99",
+          "paper_reported_loss": 1.68,
+          "paper_location": "Table IV, complexity 9"
+        },
+        {
+          "id": "table_iv_complexity_10",
+          "expression": "z**3+z*(29.8-8.24*z)",
+          "paper_reported_loss": 1.68,
+          "paper_location": "Table IV, complexity 10"
+        }
+      ],
+      "fig3_desy5": [
+        {
+          "id": "eq13_printed",
+          "expression": "30.1*z*exp(-0.262*z)",
+          "paper_reported_loss": 2.23,
+          "paper_location": "Eq. 13; Table V selected row"
+        },
+        {
+          "id": "table_v_selected_literal",
+          "expression": "30.1*z/(1.31**z)",
+          "paper_reported_loss": 2.23,
+          "paper_location": "Table V, complexity 7"
+        },
+        {
+          "id": "table_v_complexity_3",
+          "expression": "21.5*z",
+          "paper_reported_loss": 22.5,
+          "paper_location": "Table V, complexity 3"
+        },
+        {
+          "id": "table_v_complexity_5",
+          "expression": "(54.8*z)**0.77",
+          "paper_reported_loss": 4.82,
+          "paper_location": "Table V, complexity 5"
+        },
+        {
+          "id": "table_v_complexity_6",
+          "expression": "22.1*z**0.774",
+          "paper_reported_loss": 4.82,
+          "paper_location": "Table V, complexity 6"
+        }
+      ]
+    }
+  },
+  "config_sha256": "55490ce75cda27e7c2761db54849e041a3846bf6d51a7b77cc8ca0687fa305fb",
+  "prepared_inputs": {
+    "fig2_pantheon": {
+      "path": "/Users/kemingliu/Desktop/Dark Energy/results/08_fig23_data_preparation/fig2_pantheon.npz",
+      "sha256": "a07cc5c83814b02ecfc3bea5be22d8eb04a2c1a2780ecca17da610683009f86c",
+      "raw_source_sha256": {
+        "Data/DESI_BAO/desi_gaussian_bao_ALL_GCcomb_mean.txt": "9ac154ab583ce759c0f7eef3c978c7c70a6ead2d18774caceadf1a350a640585",
+        "Data/DESI_BAO/desi_gaussian_bao_ALL_GCcomb_cov.txt": "252a143274c8a07c78694c119617d36594f6d7965d00319ca611c6ffb886e509",
+        "Data/Pantheon/Pantheon+SH0ES.dat": "1cb0fc379ef066afdc2ffd1857681cc478024570d8a3eba284fb645775198cf8",
+        "Data/Pantheon/Pantheon+SH0ES_STAT+SYS.cov": "abf806d966485e64afdb359c87bffc0ecc00d05eff0a31ced66f247385df0fdc"
+      }
+    },
+    "fig3_desy5": {
+      "path": "/Users/kemingliu/Desktop/Dark Energy/results/08_fig23_data_preparation/fig3_desy5.npz",
+      "sha256": "c1eb15f3b35ed0c848d1928d30ce3842017b94ed828c1362fc6746e5ed84477d",
+      "raw_source_sha256": {
+        "Data/DESI_BAO/desi_gaussian_bao_ALL_GCcomb_mean.txt": "9ac154ab583ce759c0f7eef3c978c7c70a6ead2d18774caceadf1a350a640585",
+        "Data/DESI_BAO/desi_gaussian_bao_ALL_GCcomb_cov.txt": "252a143274c8a07c78694c119617d36594f6d7965d00319ca611c6ffb886e509",
+        "Data/DESY5/DES-SN5YR_HD.csv": "95ab1e9f5460a056de37d2b4e28df73ce0c7fd471baba9fb37f1667f41b7901c",
+        "Data/DESY5/STAT+SYS.txt.gz": "20bc94a881893235a94fc5a1b1c995f4b35bfae333996c2a0ce2696cb05381f2"
+      }
+    }
+  },
+  "completed_utc": "2026-09-20T04:51:57.850025+00:00",
+  "artifact_names": [
+    "covariance_diagnostics.csv",
+    "denominator_anchors.csv",
+    "denominator_scan.csv",
+    "experiment.json",
+    "fig2_denominator_scan.png",
+    "findings.md",
+    "formula_loss_comparison.csv",
+    "input_manifest.csv"
+  ]
+}

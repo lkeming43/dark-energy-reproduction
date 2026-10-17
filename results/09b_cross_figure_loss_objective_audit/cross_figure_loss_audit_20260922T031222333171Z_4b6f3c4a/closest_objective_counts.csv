@@ -1,0 +1,11 @@
+figure,closest_objective,count
+fig1,diagonal_cov_chi2_over_n,1
+fig1,full_cov_chi2_over_n,3
+fig1,unweighted_mse,4
+fig1,unweighted_sse,4
+fig2,diagonal_cov_chi2_over_n,3
+fig2,full_cov_chi2_over_n,8
+fig2,unweighted_mse,1
+fig3,diagonal_cov_chi2_over_n,2
+fig3,full_cov_chi2_over_n,3
+fig3,unweighted_mse,8

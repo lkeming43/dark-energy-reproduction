@@ -1,0 +1,2 @@
+scenario,desi_error_version,seed,n,selected_index,complexity,pysr_loss,python_chi2,python_loss,equation,sympy_expression,elapsed_seconds,finite_on_grid,positive_for_z_gt_zero,dm_at_zero,satisfies_dm_zero_constraint
+fig2_pantheon,paper_table,20260917,1596,6,9,1.3328131967967287,2127.16986208758,1.3328131967967294,(sqrt(z) + (z / 0.04159161141190029)) - cube(z),sqrt(z) - z**3 + 24.04330984189465*z,19.06858637498226,True,True,0.0,True

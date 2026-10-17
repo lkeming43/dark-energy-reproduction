@@ -1,0 +1,8 @@
+{
+  "center": "raw_selected_expression",
+  "n_draws": 20000,
+  "n_finite": 20000,
+  "n_pole_crossing": 1478,
+  "n_pole_free": 18522,
+  "n_nonincreasing": 0
+}

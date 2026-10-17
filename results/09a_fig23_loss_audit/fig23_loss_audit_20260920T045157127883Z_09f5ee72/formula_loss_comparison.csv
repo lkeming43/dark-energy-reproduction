@@ -1,0 +1,25 @@
+scenario,desi_error_version,n,formula_id,expression,paper_location,paper_reported_loss,our_chi2,our_loss,loss_difference
+fig2_pantheon,public_release,1596,eq12_printed,33.3*z*exp(-0.274*z),Eq. 12; Table IV selected row,1.7,7548.110759203647,4.729392706267949,3.0293927062679487
+fig2_pantheon,public_release,1596,table_iv_selected_literal,z*0.76**z/0.03,"Table IV, complexity 7",1.7,7642.992273142752,4.788842276405234,3.0888422764052335
+fig2_pantheon,public_release,1596,table_iv_complexity_3,27.1*z,"Table IV, complexity 3",4.65,5768.810478078606,3.6145429060642895,-1.0354570939357108
+fig2_pantheon,public_release,1596,table_iv_complexity_5,(z/0.034)**0.915,"Table IV, complexity 5",2.69,2991.4642005043574,1.8743510028222792,-0.8156489971777208
+fig2_pantheon,public_release,1596,table_iv_complexity_6,z*30.20*(0.18*z-1)**2,"Table IV, complexity 6",2.39,2834.0387150340057,1.775713480597748,-0.6142865194022522
+fig2_pantheon,public_release,1596,table_iv_complexity_9,0.77**z*(z*29.96)**0.99,"Table IV, complexity 9",1.68,1474.5825410300815,0.9239238978885222,-0.7560761021114777
+fig2_pantheon,public_release,1596,table_iv_complexity_10,z**3+z*(29.8-8.24*z),"Table IV, complexity 10",1.68,1452.5370640918527,0.9101109424134416,-0.7698890575865583
+fig2_pantheon,paper_table,1596,eq12_printed,33.3*z*exp(-0.274*z),Eq. 12; Table IV selected row,1.7,7588.72469190731,4.7548400325233775,3.0548400325233773
+fig2_pantheon,paper_table,1596,table_iv_selected_literal,z*0.76**z/0.03,"Table IV, complexity 7",1.7,7684.074003006117,4.814582708650449,3.114582708650449
+fig2_pantheon,paper_table,1596,table_iv_complexity_3,27.1*z,"Table IV, complexity 3",4.65,5876.353192717934,3.6819255593470763,-0.968074440652924
+fig2_pantheon,paper_table,1596,table_iv_complexity_5,(z/0.034)**0.915,"Table IV, complexity 5",2.69,2999.5160651243223,1.8793960307796505,-0.8106039692203495
+fig2_pantheon,paper_table,1596,table_iv_complexity_6,z*30.20*(0.18*z-1)**2,"Table IV, complexity 6",2.39,2867.725772920846,1.7968206597248408,-0.5931793402751593
+fig2_pantheon,paper_table,1596,table_iv_complexity_9,0.77**z*(z*29.96)**0.99,"Table IV, complexity 9",1.68,1475.7997133536535,0.924686537189006,-0.755313462810994
+fig2_pantheon,paper_table,1596,table_iv_complexity_10,z**3+z*(29.8-8.24*z),"Table IV, complexity 10",1.68,1452.7868316204376,0.9102674383586702,-0.7697325616413297
+fig3_desy5,public_release,1760,eq13_printed,30.1*z*exp(-0.262*z),Eq. 13; Table V selected row,2.23,1788.9909366394243,1.016472123090582,-1.213527876909418
+fig3_desy5,public_release,1760,table_v_selected_literal,30.1*z/(1.31**z),"Table V, complexity 7",2.23,1741.8307970496248,0.9896765892327414,-1.2403234107672585
+fig3_desy5,public_release,1760,table_v_complexity_3,21.5*z,"Table V, complexity 3",22.5,12173.365097981705,6.916684714762332,-15.583315285237667
+fig3_desy5,public_release,1760,table_v_complexity_5,(54.8*z)**0.77,"Table V, complexity 5",4.82,13026.559280600759,7.401454136704976,2.581454136704976
+fig3_desy5,public_release,1760,table_v_complexity_6,22.1*z**0.774,"Table V, complexity 6",4.82,13130.424721658119,7.460468591851204,2.640468591851204
+fig3_desy5,paper_table,1760,eq13_printed,30.1*z*exp(-0.262*z),Eq. 13; Table V selected row,2.23,1790.1854203692894,1.0171508070280053,-1.2128491929719947
+fig3_desy5,paper_table,1760,table_v_selected_literal,30.1*z/(1.31**z),"Table V, complexity 7",2.23,1742.3255593717781,0.9899577041885103,-1.2400422958114898
+fig3_desy5,paper_table,1760,table_v_complexity_3,21.5*z,"Table V, complexity 3",22.5,12194.962842820607,6.928956160693526,-15.571043839306473
+fig3_desy5,paper_table,1760,table_v_complexity_5,(54.8*z)**0.77,"Table V, complexity 5",4.82,13031.297653779613,7.404146394192962,2.5841463941929614
+fig3_desy5,paper_table,1760,table_v_complexity_6,22.1*z**0.774,"Table V, complexity 6",4.82,13132.819423630312,7.461829217971768,2.6418292179717673

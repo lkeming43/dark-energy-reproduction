@@ -1,0 +1,40 @@
+{
+  "scenario": "fig2_pantheon",
+  "branch": "refitted_exponential",
+  "family": "exponential",
+  "n_observations": 1596,
+  "data_sha256": "a07cc5c83814b02ecfc3bea5be22d8eb04a2c1a2780ecca17da610683009f86c",
+  "coefficient_order": [
+    "a",
+    "b"
+  ],
+  "deterministic_fit": {
+    "a": 29.321837095393768,
+    "b": -0.2502321413564334,
+    "chi2": 1410.3058447024086,
+    "loss": 0.8836502786355944
+  },
+  "source_expression": "30.0*z*exp(-0.25*z)",
+  "rd_mean": 101.0,
+  "rd_sigma": 2.3,
+  "omega_m": 0.3,
+  "n_draws_per_center": 100,
+  "centers": {
+    "best_fit_expression": {
+      "n_draws": 100,
+      "n_valid": 100,
+      "n_pole_crossing": 7,
+      "n_pole_free": 93,
+      "n_nonincreasing": 0,
+      "pointwise_intervals": true
+    },
+    "observed_data": {
+      "n_draws": 100,
+      "n_valid": 100,
+      "n_pole_crossing": 8,
+      "n_pole_free": 92,
+      "n_nonincreasing": 0,
+      "pointwise_intervals": true
+    }
+  }
+}

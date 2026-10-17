@@ -1,0 +1,53 @@
+# JSON syntax is valid YAML; paths are relative to the project root.
+{
+  "scenario": {
+    "id": "fig2_pantheon",
+    "figure": 2
+  },
+  "desi": {
+    "mean_file": "Data/DESI_BAO/desi_gaussian_bao_ALL_GCcomb_mean.txt",
+    "covariance_file": "Data/DESI_BAO/desi_gaussian_bao_ALL_GCcomb_cov.txt",
+    "observable": "DM_over_rs"
+  },
+  "supernova": {
+    "name": "Pantheon+",
+    "data_file": "Data/Pantheon/Pantheon+SH0ES.dat",
+    "covariance_file": "Data/Pantheon/Pantheon+SH0ES_STAT+SYS.cov",
+    "separator": "\\s+",
+    "observable_kind": "corrected_magnitude",
+    "covariance_kind": "stat_plus_sys",
+    "symmetry_atol": 5.0e-8,
+    "expected_raw_rows": 1701,
+    "expected_selected_rows": 1590,
+    "columns": {
+      "redshift": "zHD",
+      "observable": "m_b_corr",
+      "error": "m_b_corr_err_DIAG",
+      "id": "CID"
+    },
+    "selection": {
+      "redshift_min": 0.01
+    },
+    "calibration": {
+      "M": -19.253,
+      "rd_mpc": 138.28,
+      "rd_sigma_mpc": 3.1,
+      "H0_equivalent": 73.04020827306914
+    },
+    "documentation": "https://raw.githubusercontent.com/PantheonPlusSH0ES/DataRelease/main/Pantheon%2B_Data/4_DISTANCES_AND_COVAR/README"
+  },
+  "cosmology": {
+    "Omega_m": 0.3,
+    "rd_hinv_mpc": 101,
+    "rd_sigma_hinv_mpc": 2.3
+  },
+  "references": {
+    "paper_expression": "33.3*z*exp(-0.274*z)",
+    "cpl": {
+      "status": "deferred_to_reconstruction"
+    }
+  },
+  "output": {
+    "directory": "results/08_fig23_data_preparation"
+  }
+}

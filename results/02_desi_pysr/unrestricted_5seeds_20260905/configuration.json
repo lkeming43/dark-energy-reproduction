@@ -1,0 +1,123 @@
+{
+  "software_versions": {
+    "python": "3.13.11",
+    "numpy": "2.5.2",
+    "pandas": "2.3.3",
+    "scipy": "1.18.1",
+    "sympy": "1.14.0",
+    "pysr": "1.5.9",
+    "julia": "1.12.7"
+  },
+  "paper_reported": {
+    "unary_operators": [
+      "log",
+      "sqrt",
+      "exp",
+      "square",
+      "cube"
+    ],
+    "binary_operators": [
+      "+",
+      "-",
+      "*",
+      "/",
+      "pow"
+    ],
+    "loss": "(r.T @ inverse(C) @ r) / n",
+    "model_selection": "best",
+    "published_expression": "28.4 * exp(-0.519 * z)"
+  },
+  "not_reported_by_paper": [
+    "niterations",
+    "populations",
+    "population_size",
+    "random_state"
+  ],
+  "independent_reproduction_settings": {
+    "experiment_id": "unrestricted_5seeds_20260905",
+    "model_selection": "best",
+    "binary_operators": [
+      "+",
+      "-",
+      "*",
+      "/",
+      "^"
+    ],
+    "unary_operators": [
+      "log",
+      "sqrt",
+      "exp",
+      "square",
+      "cube"
+    ],
+    "constraints": {
+      "^": [
+        -1,
+        1
+      ]
+    },
+    "niterations": 60,
+    "populations": 8,
+    "population_size": 30,
+    "maxsize": 18,
+    "ncycles_per_iteration": 300,
+    "precision": 64,
+    "parallelism": "serial",
+    "deterministic": true,
+    "progress": false,
+    "verbosity": 0,
+    "seeds": [
+      202502,
+      202503,
+      202504,
+      202505,
+      202506
+    ]
+  },
+  "targeted_low_complexity_settings": {
+    "model_selection": "best",
+    "binary_operators": [
+      "+",
+      "-",
+      "*",
+      "/",
+      "^"
+    ],
+    "unary_operators": [
+      "log",
+      "sqrt",
+      "exp",
+      "square",
+      "cube"
+    ],
+    "constraints": {
+      "^": [
+        -1,
+        1
+      ]
+    },
+    "niterations": 120,
+    "populations": 8,
+    "population_size": 30,
+    "maxsize": 7,
+    "ncycles_per_iteration": 300,
+    "precision": 64,
+    "parallelism": "serial",
+    "deterministic": true,
+    "progress": false,
+    "verbosity": 0,
+    "seed": 202502,
+    "purpose": "Search for a published-like low-complexity expression for derivative extrapolation"
+  },
+  "covariance_configurations": {
+    "public_full": "Full 6 x 6 public DESI Gaussian covariance",
+    "paper_table": "Diagonal covariance from rounded Table I errors"
+  },
+  "primary_reconstruction": {
+    "covariance": "paper_table",
+    "seed": 202502,
+    "search": "targeted_low_complexity",
+    "expression": "28.129754787219495*exp(-0.5084602991924945*z)"
+  },
+  "selection_diagnostic": "The unrestricted PySR best criterion selected more complex expressions than the published low-complexity exponential. With the fixed targeted seed, the paper-table covariance recovered the published exponential structure while the public full covariance selected a quadratic. Both are retained; the paper-table result is used only as the labelled paper-like central comparison."
+}

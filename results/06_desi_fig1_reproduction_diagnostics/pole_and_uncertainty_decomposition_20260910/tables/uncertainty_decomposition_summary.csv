@@ -1,0 +1,13 @@
+covariance,center_mode,uncertainty_source,pole_fraction,maximum_1sigma_w_width,maximum_2sigma_w_width
+public_full,observed_data,data_only,0.003,1.178341666816488,3.111585428330748
+public_full,observed_data,rd_only,0.1355,2.5372814746547188,28.87431362613222
+public_full,observed_data,combined,0.154,2.543916401268617,29.64139759000028
+public_full,paper_expression,data_only,0.0,0.6898275336403044,1.5124488198543016
+public_full,paper_expression,rd_only,0.0564,1.6004549995453576,12.633531980515787
+public_full,paper_expression,combined,0.0695,1.6363351982393253,14.175206402229424
+paper_table,observed_data,data_only,0.00275,1.1511726933344066,3.0874199337993913
+paper_table,observed_data,rd_only,0.14075,2.5281344481107286,29.746786214801816
+paper_table,observed_data,combined,0.1557,2.51862846324752,31.5121556426801
+paper_table,paper_expression,data_only,0.0,0.6863634464970703,1.4938359497321738
+paper_table,paper_expression,rd_only,0.05785,1.589564535491053,12.83947766174239
+paper_table,paper_expression,combined,0.0692,1.670640459011847,14.51648287088128
