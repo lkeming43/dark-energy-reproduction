@@ -156,7 +156,7 @@ The Table III loss column is not reproducible by applying the published Eq. (9) 
 - `results/02_desi_pysr/table_iii_candidate_loss_audit_20260921/candidate_loss_comparison.csv`
 - `results/02_desi_pysr/table_iii_candidate_loss_audit_20260921/findings.md`
 - `results/02_desi_pysr/table_iii_candidate_loss_audit_20260921/paper_vs_recomputed_loss.png`
-- `run_fig1_candidate_loss_audit.py`
+- `scripts/audits/run_fig1_candidate_loss_audit.py`
 
 ---
 

@@ -1,7 +1,7 @@
 """Run Notebook 11 into a fresh experiment folder.
 
 Usage:
-    /path/to/python run_notebook11.py --draws 10000
+    /path/to/python scripts/notebooks/run_notebook11.py --draws 10000
 
 The notebook defaults to inspection mode in VS Code; this runner changes only
 RUN_ANALYSIS and optionally the Monte Carlo draw count and random seed.
@@ -19,7 +19,7 @@ def main():
     args = parser.parse_args()
     if args.draws < 100:
         parser.error("--draws must be at least 100")
-    notebook_path = Path(__file__).resolve().parent / "notebooks/11_fig23_mc_and_reconstruction.ipynb"
+    notebook_path = Path(__file__).resolve().parents[2] / "notebooks/11_fig23_mc_and_reconstruction.ipynb"
     notebook = json.loads(notebook_path.read_text())
     namespace = {"__name__": "__main__"}
     for index, cell in enumerate(notebook["cells"]):

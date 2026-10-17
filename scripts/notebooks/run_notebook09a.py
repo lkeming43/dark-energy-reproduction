@@ -6,7 +6,7 @@ import nbformat
 from nbclient import NotebookClient
 
 
-path = Path(__file__).resolve().parent / "notebooks/09a_fig23_loss_audit.ipynb"
+path = Path(__file__).resolve().parents[2] / "notebooks/09a_fig23_loss_audit.ipynb"
 notebook = nbformat.read(path, as_version=4)
 nbformat.validate(notebook)
 client = NotebookClient(

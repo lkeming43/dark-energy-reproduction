@@ -25,7 +25,7 @@ except ModuleNotFoundError:  # The numerical audit does not require plotting.
     plt = None
 
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parents[2]
 RESULTS_ROOT = ROOT / "results/09b_cross_figure_loss_objective_audit"
 PAPER = ROOT / "arXiv-2502.10506v2.pdf"
 

@@ -9,6 +9,7 @@ An independent reproduction and audit of [*Evidence for dynamical dark energy fr
 | Path | Contents |
 | --- | --- |
 | [`notebooks/`](notebooks/) | Numbered exploratory and reproduction notebooks, 01–12 |
+| [`scripts/`](scripts/README.md) | Notebook runners and independent numerical audits, grouped by purpose |
 | [`src/`](src/) | Reusable data loading, fitting, reconstruction, and diagnostics code |
 | [`configs/`](configs/) | Scenario, PySR, and Monte Carlo settings |
 | [`tests/`](tests/) | Numerical and provenance checks |
@@ -17,7 +18,6 @@ An independent reproduction and audit of [*Evidence for dynamical dark energy fr
 | [`notes/`](notes/) | Methods, literature notes, experiment log, and interim findings |
 | [`report/`](report/) | LaTeX report source, bibliography, and report figures |
 | [`Data/README.md`](Data/README.md) | Required public input files and their release locations |
-| `run_*.py` | Scripts that execute or audit specific notebooks and experiments |
 
 The original paper PDF, downloaded survey files, large prepared arrays, PySR checkpoints, 100-seed run directories, temporary files, and report ZIP exports remain local and are excluded from Git. The largest local run directory is about 17 GB. Its compact summaries and plots are included. No local files are deleted by this Git layout.
 
@@ -39,7 +39,7 @@ python -m pip install -r requirements-pysr.txt
 
 PySR also needs its Julia runtime; follow the [PySR installation instructions](https://ai.damtp.cam.ac.uk/pysr/) for your platform. The repository does not pin a single environment or promise bitwise identical PySR searches across platforms. Runs record seeds and settings in their experiment folders.
 
-Download the six public input files listed in [Data/README.md](Data/README.md) to their specified paths. The Git checkout contains the data guide, not the raw files. The audit script `run_cross_figure_loss_objective_audit.py` also expects a local copy of the [arXiv v2 PDF](https://arxiv.org/pdf/2502.10506v2) named `arXiv-2502.10506v2.pdf` in the repository root.
+Download the six public input files listed in [Data/README.md](Data/README.md) to their specified paths. The Git checkout contains the data guide, not the raw files. The [cross-figure audit script](scripts/audits/run_cross_figure_loss_objective_audit.py) also expects a local copy of the [arXiv v2 PDF](https://arxiv.org/pdf/2502.10506v2) named `arXiv-2502.10506v2.pdf` in the repository root.
 
 Check the environment and begin with the data validation notebooks:
 
@@ -61,7 +61,7 @@ Open `notebooks/01_desi_data_check.ipynb` for Figure 1 or `notebooks/08_fig23_da
 
 The labels `11c` and `11d` are follow-ups to the frozen Notebook 11 result; they do not replace it. Notebook 12 is a diagnostic of frozen fits. See [Notebook 11c's analysis](results/11c_fig2_balanced_seed_audit/fig2_balanced_20261016T044854959271Z_1a017e27/analysis.md) and [Notebook 11d's analysis](results/11d_fig2_selected_exponential_mc/fig2_exp_mc_20261016T045826099551Z_1de02bcb/analysis.md) for their scope and limitations.
 
-The Python runners at the repository root execute selected notebook workflows. For example, `python run_notebook12.py` performs a fresh diagnostic run **after** its prerequisite prepared data and frozen-fit outputs exist. Some runners create a new timestamped results directory; consult the notebook and its configuration before rerunning a large experiment.
+Run scripts from the repository root. For example, `python scripts/notebooks/run_notebook12.py` performs a fresh diagnostic run **after** its prerequisite prepared data and frozen-fit outputs exist. The audit commands live in `scripts/audits/`. Some scripts create a new timestamped results directory; consult the notebook and its configuration before rerunning a large experiment.
 
 ## Interpretation and reproducibility
 

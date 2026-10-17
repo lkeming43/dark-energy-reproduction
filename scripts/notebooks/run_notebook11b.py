@@ -1,13 +1,16 @@
 """Run Notebook 11b into a separate, resumable experiment directory.
 
 Example:
-    python run_notebook11b.py --draws 20000 --batch-size 500
-    python run_notebook11b.py --draws 20000 --batch-size 500 --resume PATH
+    python scripts/notebooks/run_notebook11b.py --draws 20000 --batch-size 500
+    python scripts/notebooks/run_notebook11b.py --draws 20000 --batch-size 500 --resume PATH
 """
 
 import argparse
 from pathlib import Path
+import sys
 
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(PROJECT_ROOT))
 from src.fig23_catalog_bootstrap import run_catalog_bootstrap
 
 
@@ -23,7 +26,7 @@ def main():
         parser.error("--draws must be at least 100")
     if args.batch_size < 1:
         parser.error("--batch-size must be positive")
-    root = Path(__file__).resolve().parent
+    root = PROJECT_ROOT
     prior = (root / "results/11_fig23_mc_and_reconstruction" /
              "fig23_mc_20261010T044029855521Z_5cf83467")
     destination, overview = run_catalog_bootstrap(

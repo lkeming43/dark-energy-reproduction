@@ -29,4 +29,4 @@ The comparison to Notebook 11 is not a perfectly isolated test of linearization:
 - `<scenario>/<branch>/<center>/bands.csv`: pointwise distance and w quantiles for all and pole-free draws.
 - `<scenario>/<branch>/<center>/reconstruction.png`: distance and w plots, including paper and LambdaCDM references.
 
-The 100-draw folder next to this one is a validation pilot, not a scientific result. Open `notebooks/11b_fig23_catalog_bootstrap.ipynb` in inspection mode to browse this completed run, or use `run_notebook11b.py` to create a new timestamped experiment. Set `--resume` to an existing folder to continue interrupted batches without redrawing them.
+The 100-draw folder next to this one is a validation pilot, not a scientific result. Open `notebooks/11b_fig23_catalog_bootstrap.ipynb` in inspection mode to browse this completed run, or use `scripts/notebooks/run_notebook11b.py` to create a new timestamped experiment. Set `--resume` to an existing folder to continue interrupted batches without redrawing them.

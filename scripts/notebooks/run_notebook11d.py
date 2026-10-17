@@ -14,7 +14,7 @@ def main():
     args = parser.parse_args()
     if args.draws < 100 or args.batch_size < 1:
         parser.error("--draws must be >=100 and --batch-size must be positive")
-    notebook_path = Path(__file__).resolve().parent / "notebooks/11d_fig2_selected_exponential_mc.ipynb"
+    notebook_path = Path(__file__).resolve().parents[2] / "notebooks/11d_fig2_selected_exponential_mc.ipynb"
     notebook = json.loads(notebook_path.read_text())
     namespace = {"__name__": "__main__"}
     for index, cell in enumerate(notebook["cells"]):

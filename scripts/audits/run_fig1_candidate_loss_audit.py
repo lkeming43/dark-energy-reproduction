@@ -25,7 +25,7 @@ except ModuleNotFoundError:  # The numerical audit does not require plotting.
     plt = None
 
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parents[2]
 DATA_FILE = ROOT / "results/01_desi_data_check/desi_dr2_dh_over_rd.npz"
 OUTPUT_DIR = (
     ROOT

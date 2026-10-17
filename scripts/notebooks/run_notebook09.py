@@ -4,7 +4,7 @@ import nbformat
 from nbclient import NotebookClient
 
 
-path = Path(__file__).resolve().parent / "notebooks/09_fig23_pysr_reproduction.ipynb"
+path = Path(__file__).resolve().parents[2] / "notebooks/09_fig23_pysr_reproduction.ipynb"
 notebook = nbformat.read(path, as_version=4)
 for index, cell in enumerate(notebook.cells):
     cell.setdefault("id", f"fig23-n09-{index:02d}")

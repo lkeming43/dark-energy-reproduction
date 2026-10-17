@@ -1,9 +1,9 @@
 """Run Notebook 10 as a foreground, resumable seed ensemble.
 
 Examples:
-    python run_notebook10.py
-    python run_notebook10.py --resume /absolute/experiment/folder
-    python run_notebook10.py --resume /absolute/experiment/folder --seed-count 500
+    python scripts/notebooks/run_notebook10.py
+    python scripts/notebooks/run_notebook10.py --resume /absolute/experiment/folder
+    python scripts/notebooks/run_notebook10.py --resume /absolute/experiment/folder --seed-count 500
 
 This executes the notebook's code cells in order, overriding only its safety
 switch (RUN_FITS) and optional seed count/resume path. Per-seed outputs are
@@ -26,7 +26,7 @@ def main():
     if args.resume is not None and not (args.resume / "experiment.json").is_file():
         parser.error("--resume must contain experiment.json")
 
-    path = Path(__file__).resolve().parent / "notebooks/10_fig23_seed_stability.ipynb"
+    path = Path(__file__).resolve().parents[2] / "notebooks/10_fig23_seed_stability.ipynb"
     notebook = json.loads(path.read_text())
     namespace = {"__name__": "__main__"}
     for index, cell in enumerate(notebook["cells"]):

@@ -16,10 +16,13 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
-from run_fig1_candidate_loss_audit import candidate_bank
+if __package__:
+    from .run_fig1_candidate_loss_audit import candidate_bank
+else:
+    from run_fig1_candidate_loss_audit import candidate_bank
 
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parents[2]
 MEAN_FILE = ROOT / "Data/DESI_BAO/desi_gaussian_bao_ALL_GCcomb_mean.txt"
 COV_FILE = ROOT / "Data/DESI_BAO/desi_gaussian_bao_ALL_GCcomb_cov.txt"
 OUTPUT_DIR = (

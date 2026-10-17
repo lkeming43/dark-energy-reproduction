@@ -19,15 +19,17 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
-from run_fig1_candidate_loss_audit import (
-    DATA_FILE,
-    TABLE_I_SIGMA,
-    TABLE_I_Y,
-    candidate_bank,
-)
+if __package__:
+    from .run_fig1_candidate_loss_audit import (
+        DATA_FILE, TABLE_I_SIGMA, TABLE_I_Y, candidate_bank,
+    )
+else:
+    from run_fig1_candidate_loss_audit import (
+        DATA_FILE, TABLE_I_SIGMA, TABLE_I_Y, candidate_bank,
+    )
 
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parents[2]
 OUTPUT_DIR = ROOT / "results/02_desi_pysr/table_iii_v1_objective_audit_20260926"
 
 
